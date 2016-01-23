@@ -2,7 +2,6 @@
 
 ***
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Build Status](https://travis-ci.org/summernote/angular-summernote.png?branch=master)](https://travis-ci.org/summernote/angular-summernote)
 [![Dependency Status](https://gemnasium.com/summernote/angular-summernote.png)](https://gemnasium.com/summernote/angular-summernote)
 [![Coverage Status](https://coveralls.io/repos/summernote/angular-summernote/badge.png)](https://coveralls.io/r/summernote/angular-summernote)
@@ -32,7 +31,7 @@ v0.7.2. Angular-summernote will release patch update, such as v0.7.1, if only an
 
 ## Demo
 
-See at [JSFiddle](http://jsfiddle.net/outsider/n8dt4/246/embedded/result%2Chtml%2Cjs%2Ccss/)
+See at [JSFiddle](http://jsfiddle.net/outsider/n8dt4/271/embedded/result%2Chtml%2Cjs%2Ccss/)
 or run example in projects(need to run `bower install` before run)
 
 ## Installation
@@ -97,6 +96,39 @@ summernote's options can be specified as attributes.
 #### airmode
 ```html
 <summernote airMode></summernote>
+```
+
+If you use the `removeMedia` button in popover, like below:
+
+```
+<summernote airMode config="options" on-media-delete="mediaDelete(target)"></summernote>
+```
+
+```
+function DemoController($scope) {
+  $scope.options = {
+    popover: {
+      image: [['remove', ['removeMedia']] ],
+      air: [['insert', ['picture']]]
+    }
+  };
+  $scope.mediaDelete = function(target) {
+    console.log('media is delted:', target);
+  }
+}
+```
+
+You can use the 'onMediaDelete` callback. The `target` object has information of the DOM that is removed like:
+
+```
+{
+  tagName: "IMG",
+  attrs: {
+    data-filename: "image-name.jpg",
+    src: "http://path/to/image",
+    style: "width: 100px;"
+  }
+}
 ```
 
 #### options object
