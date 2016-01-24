@@ -9,8 +9,8 @@ module.exports = {
   DOMAIN:           'http://localhost:9000',
   SESSION_SECRET:   'aroundthailand-secret',
 
-  FACEBOOK_ID:      '534110523426496',
-  FACEBOOK_SECRET:  '1f2df379347e01f31e12612e4b8deac8',
+  FACEBOOK_ID:      '537053416465540',
+  FACEBOOK_SECRET:  '04d90c6f5710d02f81b8cddc871bbb42',
 
   TWITTER_ID:       'dvb0vCPzVYDduMgrH0qEI7zNW',
   TWITTER_SECRET:   '4HyMNqPnTmLbt98b1U0WrzBtVbNt7gJEpVYB65blmqnikeIiUx',
