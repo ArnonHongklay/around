@@ -9,11 +9,11 @@ module.exports = {
   DOMAIN:           'http://localhost:9000',
   SESSION_SECRET:   'aroundthailand-secret',
 
-  FACEBOOK_ID:      'app-id',
-  FACEBOOK_SECRET:  'secret',
+  FACEBOOK_ID:      '534110523426496',
+  FACEBOOK_SECRET:  '1f2df379347e01f31e12612e4b8deac8',
 
-  TWITTER_ID:       'app-id',
-  TWITTER_SECRET:   'secret',
+  TWITTER_ID:       'dvb0vCPzVYDduMgrH0qEI7zNW',
+  TWITTER_SECRET:   '4HyMNqPnTmLbt98b1U0WrzBtVbNt7gJEpVYB65blmqnikeIiUx',
 
   GOOGLE_ID:        'app-id',
   GOOGLE_SECRET:    'secret',
