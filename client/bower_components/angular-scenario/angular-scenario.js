@@ -10737,8 +10737,8 @@ function getNgAttribute(element, ngAttr) {
    <file name="style.css">
    div[ng-controller] {
        margin-bottom: 1em;
-       -webkit-border-radius: 4px;
-       border-radius: 4px;
+       -webkit-border-radius: 2px;
+       border-radius: 2px;
        border: 1px solid;
        padding: .5em;
    }

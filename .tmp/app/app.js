@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('aroundThailandApp', ['ngCookies', 'ui.bootstrap', 'ngResource', 'ngSanitize', 'btford.socket-io', 'ui.router', 'summernote']).config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+  angular.module('aroundThailandApp', ['ngCookies', 'ui.materialize', 'ngResource', 'ngSanitize', 'btford.socket-io', 'ui.router', 'summernote']).config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
     return $httpProvider.interceptors.push('authInterceptor');

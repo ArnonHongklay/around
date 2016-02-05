@@ -11,6 +11,8 @@
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;
     $scope.getCurrentUser = Auth.getCurrentUser;
+    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav('hide');
     $scope.logout = function() {
       Auth.logout();
       return $location.path('/login');

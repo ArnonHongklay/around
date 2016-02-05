@@ -14,8 +14,11 @@
 
   'use strict';
 
-  angular.module('aroundThailandApp').controller('ContentCtrl', function($scope, Auth, $location, $window) {
-    return console.log("ContentCtrl");
+  angular.module('aroundThailandApp').controller('ContentCtrl', function($scope, Auth, $location, $window, $http) {
+    console.log("ContentCtrl");
+    return $http.get('/api/contents').success(function(contents) {
+      return $scope.contents = contents;
+    });
   });
 
 }).call(this);

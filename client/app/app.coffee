@@ -2,7 +2,7 @@
 
 angular.module 'aroundThailandApp', [
   'ngCookies',
-  'ui.bootstrap',
+  'ui.materialize',
   'ngResource',
   'ngSanitize',
   'btford.socket-io',

@@ -10,6 +10,8 @@ angular.module 'aroundThailandApp'
   $scope.isLoggedIn = Auth.isLoggedIn
   $scope.isAdmin = Auth.isAdmin
   $scope.getCurrentUser = Auth.getCurrentUser
+  $(".button-collapse").sideNav()
+  $(".button-collapse").sideNav('hide')
 
   $scope.logout = ->
     Auth.logout()
@@ -17,3 +19,5 @@ angular.module 'aroundThailandApp'
 
   $scope.isActive = (route) ->
     route is $location.path()
+
+

@@ -1,11 +1,82 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
-<summernote ng-model="contentBody" height="500"></summernote>
+<br>
+<div class="container contentNew" ng-hide="preview">
+  <div class="row">
+    <form class="col s12">
 
-<div class="container">
-  <div class="pull-right">
-    <div class="waves-effect waves-light btn btn-danger" ng-click="previewContent()">preview</div>
-    <div class="waves-effect waves-light btn btn-warning" ng-click="previewContent()">publish</div>
-    <div class="waves-effect waves-light btn btn-primary" ng-click="previewContent()">title</div>
-    <div class="waves-effect waves-light btn btn-success" ng-click="previewContent()">description</div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <i class="material-icons prefix">subtitles</i>
+          <input ng-model="content.title" type="text" class="validate">
+          <label for="icon_prefix">Title</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <i class="material-icons prefix">account_circle</i>
+          <input ng-model="content.created_by" type="tel" class="validate">
+          <label for="icon_telephone">Created by</label>
+        </div>
+
+        <div class="input-field col s12 m12">
+          <i class="material-icons prefix">description</i>
+          <input ng-model="content.description" type="tel" class="validate">
+          <label for="icon_telephone">Description</label>
+        </div>
+
+        <form action="#">
+          <div class="file-field input-field col s6 m6">
+            <div class="btn">
+              <span>Image preview</span>
+              <input type="file" ng-model="content.imagePreview">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </form>
+
+       <div class="input-field col s6 m6">
+        <i class="material-icons prefix">language</i>
+        <input ng-model="content.location" type="tel" class="validate">
+        <label for="icon_telephone">Location</label>
+      </div>
+
+
+
+
+      </div>
+
+    </form>
   </div>
+<!--   <div class=""  style="text-align: center;">
+    <div class="waves-effect waves-light btn" ng-click="previewContent()">preview</div>
+  </div> -->
+  <summernote ng-model="content.content" height="auto"></summernote>
+
+
+
+</div>
+<div class="fixed-action-btn virtical click-to-toggle" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large blue lighten-1 waves-effect waves-light">
+    <i class="large material-icons">settings_applications</i>
+  </a>
+  <ul>
+    <li>
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();preview=!preview" ng-hide="preview">
+        <i class="material-icons">picture_in_picture</i>
+      </a>
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();preview=!preview" ng-show="preview">
+        <i class="material-icons">mode_edit</i>
+      </a>
+    </li>
+    <li><a class="btn-floating green" ng-click="saveContent()"><i class="material-icons">done</i></a></li>
+  </ul>
+</div>
+
+<div class="container preview" ng-show="preview">
+  <h1 ng-hide="content.content">No-data</h1>
+  <div class="body-preview"></div>
+
+
+
 </div>
