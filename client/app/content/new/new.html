@@ -27,7 +27,7 @@
           <div class="file-field input-field col s6 m6">
             <div class="btn">
               <span>Image preview</span>
-              <input type="file" ng-model="content.imagePreview" ng-change="preview()">
+              <input id="previewImg" type="file" ng-model="content.imagePreview" onchange="angular.element(this).scope().preview(this)">
             </div>
             <div class="file-path-wrapper">
               <input class="file-path validate" type="text">
