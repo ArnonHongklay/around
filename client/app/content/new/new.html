@@ -1,6 +1,6 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 <br>
-<div class="container contentNew" ng-hide="preview">
+<div class="container contentNew" ng-hide="showPreview">
   <div class="row">
     <form class="col s12">
 
@@ -62,10 +62,10 @@
   </a>
   <ul>
     <li>
-      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();preview=!preview" ng-hide="preview">
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview" ng-hide="showPreview">
         <i class="material-icons">picture_in_picture</i>
       </a>
-      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();preview=!preview" ng-show="preview">
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview" ng-show="showPreview">
         <i class="material-icons">mode_edit</i>
       </a>
     </li>
@@ -73,8 +73,9 @@
   </ul>
 </div>
 
-<div class="container preview" ng-show="preview">
+<div class="container preview" ng-show="showPreview">
   <h1 ng-hide="content.content">No-data</h1>
+  <img id="preview-img">
   <div class="body-preview"></div>
 
 

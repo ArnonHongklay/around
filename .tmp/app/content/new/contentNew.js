@@ -4,8 +4,7 @@
     console.log("ContentNew");
     $('select').material_select();
     $scope.previewContent = function() {
-      $('.body-preview').html($scope.content.content);
-      return console.log($scope.content.content);
+      return $('.body-preview').html($scope.content.content);
     };
     $scope.saveContent = function() {
       console.log($scope.content);
@@ -19,7 +18,8 @@
       if (input.files && input.files[0]) {
         reader = new FileReader;
         reader.onload = function(e) {
-          $('#contentImage').attr('src', e.target.result);
+          console.log(e.target.result);
+          $('#preview-img').attr('src', e.target.result);
           $scope.content.image.data = e.target.result;
           $scope.content.image.path = 'content/preview';
         };

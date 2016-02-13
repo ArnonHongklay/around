@@ -6,7 +6,6 @@ angular.module 'aroundThailandApp'
   $('select').material_select()
   $scope.previewContent = ->
     $('.body-preview').html $scope.content.content
-    console.log $scope.content.content
 
   $scope.saveContent = ->
     console.log($scope.content)
@@ -18,7 +17,8 @@ angular.module 'aroundThailandApp'
       reader = new FileReader
 
       reader.onload = (e) ->
-        $('#contentImage').attr 'src', e.target.result
+        console.log(e.target.result)
+        $('#preview-img').attr 'src', e.target.result
         $scope.content.image.data = e.target.result
         $scope.content.image.path = 'content/preview'
         return
