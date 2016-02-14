@@ -3,6 +3,7 @@
 .tmp
 public/
 
+client/assets/images/preview/
 
 # Logs
 logs
