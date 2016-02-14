@@ -27,7 +27,7 @@
           <div class="file-field input-field col s6 m6">
             <div class="btn">
               <span>Image preview</span>
-              <input type="file" ng-model="content.imagePreview">
+              <input id="previewImg" type="file" ng-model="content.imagePreview" onchange="angular.element(this).scope().preview(this)">
             </div>
             <div class="file-path-wrapper">
               <input class="file-path validate" type="text">
@@ -62,10 +62,10 @@
   </a>
   <ul>
     <li>
-      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview" ng-hide="showPreview">
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview;" ng-hide="showPreview">
         <i class="material-icons">picture_in_picture</i>
       </a>
-      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview" ng-show="showPreview">
+      <a class="btn-floating  lime modal-trigger" ng-click="previewContent();showPreview=!showPreview;" ng-show="showPreview">
         <i class="material-icons">mode_edit</i>
       </a>
     </li>

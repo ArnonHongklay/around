@@ -10,6 +10,7 @@
 'use strict';
 
 var _ = require('lodash');
+
 var Content = require('./content.model');
 
 // Get list of things
@@ -32,8 +33,23 @@ exports.show = function(req, res) {
 // Creates a new thing in the DB.
 exports.create = function(req, res) {
   console.log(req.body);
+
+  var fs = require("fs")
+  var base64Data = req.body.imageData.replace(/^data:image\/png;base64,/, "");
+
+  if(req.body.imageType.toLowerCase().indexOf('jpeg') >=0 ) {
+    var ImgType = ".jpg"
+  }else {
+    var ImgType = ".png"
+  }
+
   Content.create(req.body, function(err, content) {
     if(err) { return handleError(res, err); }
+
+    fs.writeFile("public/"+content._id+ImgType, base64Data, 'base64', function(err) {
+      console.log(err);
+    });
+
     return res.status(201).json(content);
   });
 };
