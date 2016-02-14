@@ -35,7 +35,7 @@ exports.create = function(req, res) {
   console.log(req.body);
 
   var fs = require("fs")
-  var base64Data = req.body.imageData.replace(/^data:image\/png;base64,/, "");
+  var base64Data = req.body.imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
 
   if(req.body.imageType.toLowerCase().indexOf('jpeg') >=0 ) {
     var ImgType = ".jpg"
@@ -43,12 +43,15 @@ exports.create = function(req, res) {
     var ImgType = ".png"
   }
 
+  var imageName = Math.random().toString(36).substring(7);
+  req.body.imagePreview = "assets/images/preview/"+imageName+ImgType
+
+  fs.writeFile("client/"+req.body.imagePreview, base64Data, 'base64', function(err) {
+    console.log(err);
+  });
+
   Content.create(req.body, function(err, content) {
     if(err) { return handleError(res, err); }
-
-    fs.writeFile("public/"+content._id+ImgType, base64Data, 'base64', function(err) {
-      console.log(err);
-    });
 
     return res.status(201).json(content);
   });

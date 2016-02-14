@@ -1,12 +1,13 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="container">
-  <div class="row">
+  <div class="row" style="margin-bottom: 40px;">
     <div class="col s12 text-center">
-      <h1>สถานที่แนะนำ</h1>
+      <h1 style="color:#444;">สถานที่แนะนำ</h1>
       <span>หลากสไตล์ตามใจคุณไม่ว่าจะเป็นภูเขา, ทะเล, หรือใช้ชีวิตชิคชิคในเมือง</span>
     </div>
   </div>
+  <!--
   <div class="row">
     <div class="col s12 text-center">
       <a href="#" data-group="attraction" class="link active" name="btnLocation" data-locationid="1">หัวหิน</a>
@@ -18,246 +19,33 @@
       <a href="#">ภูเก็ต</a>
     </div>
   </div>
+ -->
   <div class="row">
-    <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4 card-box" ng-repeat="content in contents">
+    <a ng-href="content/{{content._id}}">
       <div class="card">
         <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
+
+          <img ng-src="{{content.imagePreview}}">
           <!-- <span class="card-title">Card Title</span> -->
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <p style="color: #ffab40; font-size: 20px;">{{content.title}}</p>
         </div>
        <!--  <div class="card-action">
           <a href="#">This is a link</a>
         </div> -->
       </div>
+      </a>
     </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/images/sample-1.jpg">
-          <!-- <span class="card-title">Card Title</span> -->
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
-      </div>
-    </div>
+
   </div>
+
+
+
 </div>
 
-<div ng-include="'components/footer/footer.html'"></div>
+
+
+
+<!-- <div ng-include="'components/footer/footer.html'"></div> -->
