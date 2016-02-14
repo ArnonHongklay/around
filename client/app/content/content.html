@@ -8,7 +8,7 @@
    <div class="col s12 m6" ng-repeat="content in contents">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/office.jpg">
+          <img class="activator" ng-src="public/{{content._id}}">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">{{content.title}}<i class="material-icons right">more_vert</i></span>
