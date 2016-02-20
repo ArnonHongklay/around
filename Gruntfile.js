@@ -9,6 +9,10 @@ module.exports = function (grunt) {
     localConfig = {};
   }
 
+  grunt.loadNpmTasks('grunt-forever');
+
+
+
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
     express: 'grunt-express-server',
@@ -24,6 +28,22 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+
+    forever: {
+      server1: {
+        options: {
+          index: 'server/app.js',
+          logDir: 'logs'
+        }
+      },
+
+      server2: {
+        options: {
+          index: 'otherindex.js',
+          logDir: 'logs'
+        }
+      }
+    },
 
     // Project settings
     pkg: grunt.file.readJSON('package.json'),
