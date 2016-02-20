@@ -33,7 +33,8 @@ module.exports = function (grunt) {
       server1: {
         options: {
           index: 'server/app.js',
-          logDir: 'logs'
+          logDir: 'logs',
+          hostname: '127.0.0.1'
         }
       },
 
@@ -725,3 +726,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 };
+
