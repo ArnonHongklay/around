@@ -36,11 +36,11 @@ exports.create = function(req, res) {
 
   var fs = require("fs")
   var base64Data = req.body.imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-
+  var ImgType;
   if(req.body.imageType.toLowerCase().indexOf('jpeg') >=0 ) {
-    var ImgType = ".jpg"
+    ImgType = ".jpg"
   }else {
-    var ImgType = ".png"
+    ImgType = ".png"
   }
 
   var imageName = Math.random().toString(36).substring(7);

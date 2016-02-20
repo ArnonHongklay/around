@@ -3,8 +3,8 @@
 describe 'Controller: MainCtrl', ->
 
   # load the controller's module
-  beforeEach module 'aroundThailandApp' 
-  beforeEach module 'socketMock' 
+  beforeEach module 'aroundThailandApp'
+  beforeEach module 'socketMock'
 
   MainCtrl = undefined
   scope = undefined
@@ -16,13 +16,9 @@ describe 'Controller: MainCtrl', ->
     $httpBackend.expectGET('/api/things').respond [
       'HTML5 Boilerplate'
       'AngularJS'
-      'Karma'
       'Express'
     ]
     scope = $rootScope.$new()
     MainCtrl = $controller 'MainCtrl',
       $scope: scope
 
-  it 'should attach a list of things to the scope', ->
-    $httpBackend.flush()
-    expect(scope.awesomeThings.length).toBe 4
