@@ -10,7 +10,11 @@ var ContentSchema = new Schema({
   location: String,
   content: String,
   imagePreview: String,
-  created_at: Date
+  created_at: Date,
+  types: {},
+  tags: [
+    { name: String}
+  ]
 });
 
 module.exports = mongoose.model('Content', ContentSchema);
