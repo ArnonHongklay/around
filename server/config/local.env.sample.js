@@ -6,7 +6,7 @@
 // You will need to set these on the server you deploy to.
 
 module.exports = {
-  DOMAIN:           'http://localhost:9000',
+  DOMAIN:           'http://localhost:1337',
   SESSION_SECRET:   'aroundthailand-secret',
 
   FACEBOOK_ID:      '537053416465540',
