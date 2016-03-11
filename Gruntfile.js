@@ -11,8 +11,6 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-forever');
 
-
-
   // Load grunt tasks automatically, when needed
   require('jit-grunt')(grunt, {
     express: 'grunt-express-server',
@@ -28,22 +26,20 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
-
     forever: {
-      server1: {
+      aroundthailand: {
         options: {
           index: 'server/app.js',
           logDir: 'logs',
           hostname: '127.0.0.1'
         }
-      },
-
-      server2: {
-        options: {
-          index: 'otherindex.js',
-          logDir: 'logs'
-        }
       }
+      // server2: {
+      //   options: {
+      //     index: 'otherindex.js',
+      //     logDir: 'logs'
+      //   }
+      // }
     },
 
     // Project settings
@@ -55,7 +51,7 @@ module.exports = function (grunt) {
     },
     express: {
       options: {
-        port: process.env.PORT || 9000
+        port: process.env.PORT || 1337
       },
       dev: {
         options: {
@@ -235,7 +231,7 @@ module.exports = function (grunt) {
         options: {
           nodeArgs: ['--debug-brk'],
           env: {
-            PORT: process.env.PORT || 9000
+            PORT: process.env.PORT || 1337
           },
           callback: function (nodemon) {
             nodemon.on('log', function (event) {

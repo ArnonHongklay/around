@@ -24,7 +24,7 @@
         </div>
 
         <form action="#">
-          <div class="file-field input-field col s6 m6">
+          <div class="file-field input-field col s12 m6">
             <div class="btn">
               <span>Image preview</span>
               <input id="previewImg" type="file" ng-model="content.imagePreview" onchange="angular.element(this).scope().preview(this)">
@@ -35,7 +35,7 @@
           </div>
         </form>
 
-       <div class="input-field col s6 m6">
+       <div class="input-field col s12 m6">
         <i class="material-icons prefix">language</i>
         <input ng-model="content.location" type="tel" class="validate">
         <label for="icon_telephone">Location</label>
@@ -59,7 +59,25 @@
           <input id="type4" type="checkbox" checked="checked" ng-model="content.types.place"/>
           <label for="type4">สถานที่</label>
         </span>
+        <span>
+          <input id="type5" type="checkbox" checked="checked" ng-model="content.types.trip"/>
+          <label for="type5">ทริป</label>
+        </span>
       </form>
+
+      <form class="type-form col s12 m6" action="#">
+        <h4>Tags
+          <div class="chip" ng-repeat="tag in content.tags">
+          {{tag.name}}
+          <i class="material-icons" ng-click="removeTag($index)">close</i>
+        </div>
+        </h4>
+
+        <input class="new-tag-value col s3 m3" style="font-size: 15px;" ng-model="newTag">
+         <a class="btn-floating btn-large waves-effect waves-light green" ng-click="addTags()"><i class="material-icons">add</i></a>
+
+      </form>
+
 
 
 

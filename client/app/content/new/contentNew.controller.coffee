@@ -1,11 +1,19 @@
 angular.module 'aroundThailandApp'
 .controller 'ContentNewCtrl', ($scope, Auth, $location, $window, $http, $state) ->
   console.log "ContentNew"
-  $scope.content = {content: "", image:{data:'',path:''} }
+  $scope.content = {content: "", image:{data:'',path:''}, tags: [{name: 'All'}] }
   $('select').material_select()
   $scope.previewContent = ->
     $('.body-preview').html $scope.content.content
     return
+
+  $scope.addTags = ->
+    return unless $scope.newTag.length
+    $scope.content.tags.push { name: $scope.newTag }
+    $scope.newTag = ''
+
+  $scope.removeTag = (index) ->
+    $scope.content.tags.splice(index, 1)
 
   $scope.saveContent = ->
     console.log($scope.content)
