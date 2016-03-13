@@ -12,13 +12,14 @@ exports.setup = function (User, config) {
         'facebook.id': profile.id
       },
       function(err, user) {
+        console.log(user)
         if (err) {
           return done(err);
         }
         if (!user) {
           user = new User({
             name: profile.displayName,
-            email: profile.emails[0].value,
+            email: profile.emails,
             role: 'user',
             username: profile.username,
             provider: 'facebook',
