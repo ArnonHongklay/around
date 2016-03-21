@@ -85,10 +85,10 @@ module.exports = function (grunt) {
         ],
         tasks: ['injector:css']
       },
-      mochaTest: {
-        files: ['server/**/*.spec.js'],
-        tasks: ['env:test', 'mochaTest']
-      },
+      // mochaTest: {
+      //   files: ['server/**/*.spec.js'],
+      //   tasks: ['env:test', 'mochaTest']
+      // },
       jsTest: {
         files: [
           '<%= yeoman.client %>/{app,components}/**/*.spec.js',
@@ -467,12 +467,12 @@ module.exports = function (grunt) {
       }
     },
 
-    mochaTest: {
-      options: {
-        reporter: 'spec'
-      },
-      src: ['server/**/*.spec.js']
-    },
+    // mochaTest: {
+    //   options: {
+    //     reporter: 'spec'
+    //   },
+    //   src: ['server/**/*.spec.js']
+    // },
 
     protractor: {
       options: {
@@ -659,8 +659,8 @@ module.exports = function (grunt) {
     if (target === 'server') {
       return grunt.task.run([
         'env:all',
-        'env:test',
-        'mochaTest'
+        'env:test' // ,
+        // 'mochaTest'
       ]);
     }
 
@@ -722,4 +722,3 @@ module.exports = function (grunt) {
     'build'
   ]);
 };
-
