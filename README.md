@@ -1,6 +1,6 @@
 # Around Project
 
-# Email Address
+## Email Address
 email: `hi@mepop.co`
 password: `mep0pl3an!`
 
