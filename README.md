@@ -1,15 +1,20 @@
 # Around Project
-email: `hi@aroundthailand.co`
-password: `S0ftl3an!`
 
-mandrill
-email: `hi@aroundthailand.co`
-password: `S0ftl3an!MD`
+# Email Address
+email: `hi@mepop.co`
+password: `mep0pl3an!`
 
-Facebook Marketing
-email: `hi@aroundthailand.co`
-password: `S0ftl3an!FB`
+## Mandrill
 
-Youtube
-email: `hi@aroundthailand.co`
-password: `s0ftl3an!YT`
+email: `hi@mepop.co`
+password: `mep0pl3an!MD`
+
+## Facebook Marketing
+
+email: `hi@mepop.co`
+password: `mep0pl3an!FB`
+
+## Youtube
+
+email: `hi@mepop.co`
+password: `mep0pl3an!YT`
