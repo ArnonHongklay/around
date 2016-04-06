@@ -1,45 +1,232 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
-  <div class="row" style="margin-bottom: 40px;">
-    <div class="col s12 text-center">
-      <h1 style="color:#444;">ร่วมกันแบ่งปันความสุขไปกับ Around Thailand</h1>
-      <span>หลากสไตล์ตามใจคุณไม่ว่าจะเป็นภูเขา, ทะเล, หรือใช้ชีวิตชิคชิคในเมือง</span>
+<div class="row row-slider">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/images/bg-1.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-2.png">
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-3.jpg">
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-4.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-5.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="section">
+      <!-- <h1 style="text-align:center;">ร่วมแบ่งปันประสบการณ์</h1> -->
+      <div class="row home-show-up">
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="material-icons">restaurant</i>
+            <h2 class="promo-caption">กินอร่อย</h2>
+            <p class="light center">เราคัดสรรที่กินชิวๆ<br>ร้านหาหารที่คุณต้องอยากไปโดนกับตัวเองไว้ที่นี่แล้ว<br>ไม่ว่าจะร้านริมทาง บนภูเขา หรือริมหาด <br>ร้านไหนโดนใจเรา เราหามาให้คุณแล้ว<br>หรือจะมาร่วมแบ่งปันเราก็ยินดี</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="material-icons">filter_hdr</i>
+            <h2 class="promo-caption">เที่ยวสนุก</h2>
+            <p class="light center">คุณเที่ยวในไทยทุกซอกทุกมุมหรือยังถ้ายังลองมาหาดูที่เที่ยวอีกเยอะแยะมากมายที่คุณยังไม่ได้ลองไปหรือคุณมีที่เที่ยวเจ๋งๆที่คุณคิดว่าต้องโดนใจคนอื่นแน่ๆอย่าเก็บไว้คนเดียวเรามาแบ่งปันกัน</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="center promo promo-example">
+            <i class="material-icons">hotel</i>
+            <h2 class="promo-caption">นอนสบาย</h2>
+            <p class="light center">ที่พักวิวดีบรรยากาศโดนๆ ราคาคุ้มค่า ในไทยเรายังมีอีกมากมายที่คุณยังไม่เคยไป มาสำผัสและแบ่งปันสิ่งดีๆไปด้วยกัน </p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
-  <!--
-  <div class="row">
-    <div class="col s12 text-center">
-      <a href="#" data-group="attraction" class="link active" name="btnLocation" data-locationid="1">หัวหิน</a>
-      <span class="location-seperator">|</span>
-      <a href="#">เขาใหญ่</a>
-      <span class="location-seperator">|</span>
-      <a href="#">พัทยา</a>
-      <span class="location-seperator">|</span>
-      <a href="#">ภูเก็ต</a>
+
+  <div class="row show-card">
+    <h1 style="text-align: center;margin-top: 40px;">แบ่งปันประสบการณ์</h1>
+    <!-- <img src="assets/images/sand-bg.jpg" style="position: absolute;width: 100%;height: 100%;"> -->
+    <div class="container">
+      <div class="col s12 m6 l4 card-box" ng-repeat="content in contents">
+        <a ng-href="content/{{content._id}}">
+          <div class="card">
+            <div class="card-image">
+              <img class="image-preview" ng-src="{{content.imagePreview}}">
+            </div>
+            <div class="col s12" style="margin-bottom: 10px;">
+              <i class="material-icons" ng-show="content.types.food">restaurant</i>
+              <i class="material-icons" ng-show="content.types.place">filter_hdr</i>
+              <i class="material-icons" ng-show="content.types.rest">hotel</i>
+              <i class="material-icons" ng-show="content.types.activity">directions_bike</i>
+              <i class="material-icons" ng-show="content.types.trip">card_travel</i>
+              <i class="material-icons" ng-show="content.types.route">directions</i>
+            </div>
+            <div class="card-content">
+              <p style="color: #444; font-size: 20px;">{{content.title}}</p>
+              <img src="assets/images/fb-share.png" class="image-facebook-share" >
+            </div>
+
+          </div>
+        </a>
+      </div>
     </div>
   </div>
- -->
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/paralax/bg-2.jpg" alt="Unsplashed background img 2" style="display: block; transform: translate3d(-50%, 7px, 0px);"></div>
+  </div>
+
+  <div class="container">
+    <!-- <h1 style="text-align:center;">สิ่งดีๆที่อยากแบ่งปัน</h1> -->
+
+    <div class="row home-show-up" style="margin-top: 20px;">
+      <div class="col s4">
+        <div class="center promo promo-example">
+          <i class="material-icons">directions_bike</i>
+          <h2 class="promo-caption">กิจกรรม</h2>
+          <p class="light center">ที่พักวิวดีบรรยากาศโดนๆ ราคาคุ้มค่า ในไทยเรายังมีอีกมากมายที่คุณยังไม่เคยไป มาสำผัสและแบ่งปันสิ่งดีๆไปด้วยกัน </p>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="center promo promo-example">
+          <i class="material-icons">card_travel</i>
+          <h2 class="promo-caption">ทริป</h2>
+          <p class="light center">ที่พักวิวดีบรรยากาศโดนๆ ราคาคุ้มค่า ในไทยเรายังมีอีกมากมายที่คุณยังไม่เคยไป มาสำผัสและแบ่งปันสิ่งดีๆไปด้วยกัน </p>
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="center promo promo-example">
+          <i class="material-icons">directions</i>
+          <h2 class="promo-caption">เส้นทาง</h2>
+          <p class="light center">ที่พักวิวดีบรรยากาศโดนๆ ราคาคุ้มค่า ในไทยเรายังมีอีกมากมายที่คุณยังไม่เคยไป มาสำผัสและแบ่งปันสิ่งดีๆไปด้วยกัน </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/paralax/bg-3.jpg" alt="Unsplashed background img 3" style="display: block; transform: translate3d(-50%, 28px, 0px);"></div>
+  </div>
+
+
+
+<!-- ------------------------- -->
+
+<!-- <div class="row row-slider">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/images/bg-1.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-2.png">
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-3.jpg">
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-4.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/bg-5.jpg">
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+<!-- ------------------- -->
+
+
+
+
+
+
+<!--
   <div class="row">
     <div class="col s12 m6 l4 card-box" ng-repeat="content in contents">
     <a ng-href="content/{{content._id}}">
       <div class="card">
         <div class="card-image">
-
           <img ng-src="{{content.imagePreview}}">
-          <!-- <span class="card-title">Card Title</span> -->
         </div>
         <div class="card-content">
           <p style="color: #ffab40; font-size: 20px;">{{content.title}}</p>
         </div>
-       <!--  <div class="card-action">
-          <a href="#">This is a link</a>
-        </div> -->
       </div>
       </a>
     </div>
-
   </div>
+  -->
 
 
 
