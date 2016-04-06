@@ -29,5 +29,3 @@ end
 gem 'coveralls', require: false
 
 gem 'pg'
-
-gem 'summernote-rails'
