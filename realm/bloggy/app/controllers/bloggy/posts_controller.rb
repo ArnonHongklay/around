@@ -2,7 +2,6 @@ class Bloggy::PostsController < Bloggy::ApplicationController
   def index
     @page = params[:page].nil? ? 1 : params[:page]
     @posts = Bloggy::Post.page(@page).includes(:user).published
-    # binding.pry
   end
 
   def show
