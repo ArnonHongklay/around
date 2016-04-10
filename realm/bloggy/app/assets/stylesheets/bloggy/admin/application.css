@@ -7,5 +7,6 @@
  *= require bloggy/bootstrap/bootstrap-responsive.min
  *= require bloggy/bootstrap/bootstrap-datepicker
  *= require select2
+ *= require summernote
  *= require bloggy/admin/posts
 */
