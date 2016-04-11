@@ -380,9 +380,9 @@ DEPENDENCIES
   activerecord-session_store
   aws-sdk
   bloggy!
-  capistrano (~> 3.1.0)
+  capistrano (~> 3.1)
   capistrano-bundler (~> 1.1.2)
-  capistrano-rails (~> 1.1.1)
+  capistrano-rails (~> 1.1)
   capistrano-rbenv!
   capybara (~> 1.1.4)
   capybara-webkit
