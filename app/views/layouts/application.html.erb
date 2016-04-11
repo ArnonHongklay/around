@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-<head>
+  <head>
     <title>Travego</title>
     <meta charset="utf-8">
     <meta name="description" content="travel, trip, store, shopping, siteweb, cart">
@@ -11,22 +12,33 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'/>
 
-    <style type="text/css">.weatherForecast{display:none;} .weatherFeed{margin:5px 10px;}</style>
+    <%= stylesheet_link_tag 'css/bootstrap', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/font-awesome-4.4.0/css/font-awesome.min', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/jquery-ui-1.10.4.custom.min', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/settings', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/travel-mega-menu', media: 'all', 'data-turbolinks-track' => true %>
+    <!--Carousel-->
+    <%= stylesheet_link_tag 'css/carousel/component', media: 'all', 'data-turbolinks-track' => true %>
+    <!--Gallery-->
+    <%= stylesheet_link_tag 'css/gallery/component', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/layout2', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'css/responsive', media: 'all', 'data-turbolinks-track' => true %>
 
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
-<%= javascript_include_tag "js/modernizr", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "js/jquery-1.10.1.min", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "js/jquery-migrate-1.2.1.min", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "js/jquery-ui-1.10.4.custom.min", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "js/jquery.easing.1.3", "data-turbolinks-track" => true %>
-<!-- waypoint -->
-<%= javascript_include_tag "js/waypoints.min", "data-turbolinks-track" => true %>
+<%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+<%= javascript_include_tag 'js/modernizr', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery-1.10.1.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery-migrate-1.2.1.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery-ui-1.10.4.custom.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery.easing.1.3', "data-turbolinks-track" => true %>
 <!--Preload-->
 <script type="text/javascript">
     $(document).ready(function ($) {
@@ -38,39 +50,61 @@
         }
     });
 </script>
-<%= javascript_include_tag "js/oxy_slider/main", "data-turbolinks-track" => true %>
 
-<%= javascript_include_tag "js/bootstrap.min", "data-turbolinks-track" => true %> 
-<%= javascript_include_tag "js/bootstrap-hover-dropdown.min", "data-turbolinks-track" => true %>
-<!--bxSlider-->
-<%= javascript_include_tag "js/jquery.bxslider", "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery.themepunch.plugins.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/jquery.themepunch.revolution.min', "data-turbolinks-track" => true %>
 <script type="text/javascript">
-$(document).ready(function () {
-    "use strict";
-    $('.bxslider').bxSlider({
-        auto: true
+    var tpj = jQuery;
+    tpj(document).ready(function () {
+        "use strict";
+        if (tpj.fn.cssOriginal !== undefined)
+            tpj.fn.css = tpj.fn.cssOriginal;
+        tpj('.fullwidthbanner').revolution(
+    {
+        delay: 9000,
+        startwidth: 1170,
+        startheight: 646,
+        onHoverStop: "on",
+        thumbWidth: 100,
+        thumbHeight: 50,
+        thumbAmount: 4,
+        hideThumbs: 200,
+        navigationType: 'none',
+        navigationArrows: "verticalcentered",   //nexttobullets, verticalcentered, none
+        navigationStyle: "large",
+        touchenabled: "on",
+        navOffsetHorizontal: 0,
+        navOffsetVertical: 20,
+        fullWidth: "on",
+        shadow: 0
     });
+    });
+</script>
+
+
+<%= javascript_include_tag 'js/bootstrap.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/bootstrap-hover-dropdown.min', "data-turbolinks-track" => true %>
+<!--Carousel-->
+<%= javascript_include_tag 'js/carousel/modernizr.custom', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/carousel/jquery.cbpContentSlider.min', "data-turbolinks-track" => true %>
+<script type="text/javascript">
+$(function () {
+    "use strict";
+    $('#cbp-contentslider').cbpContentSlider();
 });
 </script>
-
-<%= javascript_include_tag "js/script", "data-turbolinks-track" => true %>
-<!--Meteo Lib-->
-<%= javascript_include_tag "js/meteo/jquery.zweatherfeed", "data-turbolinks-track" => true %>
- <script type="text/javascript">
-     $(document).ready(function () {
-         "use strict";
-         $('#meteo1').weatherfeed(['UKXX0085', 'CAXX0518', 'CHXX0049'], {
-             forecast: true
-         });
-         $('#meteo2').weatherfeed(['ITXX0006', 'CAXX0504', 'JAXX0085'], {
-             forecast: true
-         });
-     });
+<!-- Gallery -->
+<%= javascript_include_tag 'js/gallery/imagesloaded.pkgd.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/gallery/masonry.pkgd.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/gallery/classie', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/gallery/cbpGridGallery', "data-turbolinks-track" => true %>
+<script type="text/javascript">
+$(function () {
+    "use strict";
+    new CBPGridGallery(document.getElementById('grid-gallery'));
+});
 </script>
-
-
-<%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
-</body>
+<%= javascript_include_tag 'js/waypoints.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'js/script', "data-turbolinks-track" => true %>
+  </body>
 </html>

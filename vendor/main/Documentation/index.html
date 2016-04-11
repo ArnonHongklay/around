@@ -1,0 +1,498 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Travego</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'/>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+	<div class="container">
+	   <div class="col-md-12 documentation">
+       <div class="content-logo"><img src="assets/images/logo.jpg" alt="" /><h3>Documentation</h3></div>
+
+		<hr>
+		
+		<div class="borderTop">
+			
+				<p class="prepend-top">
+					<strong>
+					Created: 25/12/2015<br>
+					By: ThemeOxygen<br>
+					</strong>
+				</p>
+			<div class="last">
+				<p class="prepend-top append-0">
+                Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/themeoxygen">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+	    
+		
+		<h3>Menu </h3>
+		<p>Menu: for setting the menu style you need to go inside the file travel-mega-menu.css</p>
+        <p>The responsive view use a second menu with this id id="mobile-menu-01", that is activated with the display block</p>
+        
+        <h3>Reservation Form </h3>
+		<p>In the project you have two reservation form, one for the hotels and the second for the flight</p>
+        <br />
+        <img src='assets/images/reservationForm.jpg' alt='' />
+
+        <br />
+        
+        <h3>Side Show</h3>
+		<p>The slideshow it maagement from ths script</p>
+        <pre>
+        var tpj = jQuery;
+        tpj(document).ready(function () {
+            if (tpj.fn.cssOriginal !== undefined)
+                tpj.fn.css = tpj.fn.cssOriginal;
+            tpj('.fullwidthbanner').revolution(
+                {
+                    delay: 9000,
+                    startwidth: 1170,
+                    startheight: 646,
+                    onHoverStop: "on",
+                    thumbWidth: 100, 
+                    thumbHeight: 50,
+                    thumbAmount: 4,
+                    hideThumbs: 200, 
+                    navigationType: 'none',
+                    navigationArrows: "verticalcentered", 	//nexttobullets, verticalcentered, none
+                    navigationStyle: "large",
+                    touchenabled: "on",
+                    navOffsetHorizontal: 0,
+                    navOffsetVertical: 20,
+                    fullWidth: "on",
+                    shadow: 0
+                });
+        });
+        </pre>
+        <br />
+        <p>SlideShow, all setting for the text effect you find inside the file css setting_slide2.css for the index.html and for the homepage2.html, inside the setting.css for the homepage3.html.</p>
+
+       <h3>BxSlider</h3>
+		<p>The slide you find in the middle page with the city, you can find more info in this link </p>
+        <a href='http://bxslider.com/'>http://bxslider.com/</a>
+        <br /> <br />
+            <img src='assets/images/slideCenter.jpg' alt='' />
+        <br /> <br />
+
+        <p>The javascript that activated this slide it's this:</p>
+        
+        <pre>
+             $(document).ready(function () {
+                $('.bxslider').bxSlider({
+                    auto: true
+                });
+            });
+        </pre>
+        <br />
+        <p>The button prev and next it s persnalized, you can find the css inside the layout2.css</p>
+
+
+        <h3>Counter</h3>
+		<br />
+            <img src='assets/images/counter.jpg' alt='' />
+        <br /> <br />
+        <p>The counter use this file javascript js/jquery.counterup.js, and start with</p>
+        <pre>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 40,
+                time: 4000
+            });
+        });
+        </pre>
+        
+
+        <h3>Carousel</h3>
+        <br />
+            <img src='assets/images/carousel.jpg' alt='' />
+        <br /> <br />
+        <p>Carousel use this library js/carousel/jquery.cbpContentSlider.min.js and this code for start:</p>
+        <pre>
+           $(function () {
+                $('#cbp-contentslider').cbpContentSlider();
+            });
+        
+        </pre>
+
+
+        <h3>Page list trip</h3>
+        <br />
+            <img src='assets/images/listTrip.jpg' alt='' />
+        <br /> <br />
+        <p>the list trip have the colum left the open and close you management with the css layout2.css class .ac-container input:checked ~ article.ac-small</p>
+        <p>the position list/grid with the file inside list folder component.css</p>
+        <p>the dropdown price and location you management with this script:</p>
+        <pre>
+        $(function () {
+          // Clickable Dropdown
+          $('.click-nav > ul').toggleClass('no-js js');
+          $('.click-nav .js ul').hide();
+          $('.click-nav .js').click(function (e) {
+              $('.click-nav .js ul').slideToggle(200);
+              $('.clicker').toggleClass('active');
+              e.stopPropagation();
+          });
+          $(document).click(function () {
+              if ($('.click-nav .js ul').is(':visible')) {
+                  $('.click-nav .js ul', this).slideUp();
+                  $('.clicker').removeClass('active');
+              }
+          });
+
+          $('.click-nav-location > ul').toggleClass('no-js js');
+          $('.click-nav-location .js ul').hide();
+          $('.click-nav-location .js').click(function (e) {
+              $('.click-nav-location .js ul').slideToggle(200);
+              $('.clicker').toggleClass('active');
+              e.stopPropagation();
+          });
+          $(document).click(function () {
+              if ($('.click-nav-location .js ul').is(':visible')) {
+                  $('.click-nav-location .js ul', this).slideUp();
+                  $('.clicker').removeClass('active');
+              }
+          });
+      });
+        </pre>
+
+        <h3>Gallery Isotope</h3>
+
+        <p>All gallery management with the isotope and this script for mangement the categories</p>
+
+        <pre>
+        /********************************************
+        PORTFOLIO
+        ********************************************/
+        $(window).load(function () {
+            var $container = $('.albumContainer');
+            $container.isotope({
+                filter: '*',
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+
+            $('.albumFilter li').click(function () {
+                $('.albumFilter .current').removeClass('current');
+                $(this).addClass('current');
+
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
+                return false;
+            });
+        </pre>
+
+        <h3>Guide Tabs</h3>
+        <br />
+            <img src='assets/images/guide.jpg' alt='' />
+        <br /> <br />
+        <p>The library of guide it s this js/tabs/jquery.responsiveTabs.js and the script:</p>
+
+        <pre>
+        $(document).ready(function () {
+            $('#horizontalTab').responsiveTabs({
+                rotate: false,
+                startCollapsed: 'accordion',
+                collapsible: 'accordion',
+                setHash: true,
+                animation: 'slide',
+                disabled: [4],
+                activate: function (e, tab) {
+                    $('.info').html('Tab &lt;strong&gt;' + tab.id + '&lt;/strong&gt; activated!');
+                },
+                activateState: function (e, state) {
+                    //console.log(state);
+                    $('.info').html('Switched from &lt;strong&gt;' + state.oldState + '&lt;/strong&gt; state to &lt;strong&gt;' + state.newState + '&lt;/strong&gt; state!');
+                }
+            });
+
+        });
+        </pre>
+        <h3>WEATHER/Meteo</h3>
+        <br />
+            <img src='assets/images/meteo.jpg' alt='' />
+        <br /> <br />
+        <p>you find in this link: </p>
+        <a href:'http://www.zazar.net/developers/jquery/zweatherfeed/'>http://www.zazar.net/developers/jquery/zweatherfeed/</a>
+
+        <p>First include the jQuery and zWeatherFeed libraries. jquery.zweatherfeed.min.js</p>
+
+        <p>Add a DIV tag where you wish the weather feeds are to display and give it an ID. There is no need to specify a class, this will be added.</p>
+        <p>Now add the script to call the zWeatherFeed plugin with an array of location ID's (to find a location ID visit the Weather Channel page and select a location then click on RSS, 
+        the location ID is at the end of the URL address ie UKXX0085 for London, UK). Our example gets the weather for London, Luxor, Glasgow, Vancouver and Hong Kong. Note: 
+        the plugin limits locations to a maximum of 10.</p>
+        <p>The other web site where you find the Id location it s</p>
+        <a href="https://weather.codes/">https://weather.codes/</a><br /><br />
+        <pre>
+        $(document).ready(function () {
+           $('#test').weatherfeed(['UKXX0085','EGXX0011','UKXX0061','CAXX0518','CHXX0049']);
+         });
+        </pre>
+
+        <h3>Contact/ Google maps</h3>
+
+        <p>The script for the control email vaidation it s inside the script.js this</p>
+        <pre>
+        $(function () {
+        "use strict";
+        $('#contact_form').submit(function (e) {
+            e.preventDefault();
+            var form = $(this);
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var text = $("#message").val();
+            var dataString = 'name=' + name + '&email=' + email + '&message=' + text;
+            function isValidEmail(emailAddress) {
+                var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+                return pattern.test(emailAddress);
+            };
+            if (isValidEmail(email) && (text.length > 20) && (name.length > 1)) {
+                $.ajax({
+                    type: 'POST',
+                    url: "contact_form/contact_process.php",
+                    data: dataString,
+                    success: function () {
+                        $('.success').fadeIn(1000);
+                    }
+                });
+            } else {
+                $('.error').fadeIn(1000);
+            }
+        });
+    });
+        </pre>
+        <p>When all the controll it s ok call the file php for send the email:</p>
+        <pre>
+
+            $to = "alessio.corsini@gmail.com";
+            $name = $_POST['name'];
+            $message = $_POST['message'];
+            $from = $_POST['email'];
+            $headers = "From:" . $from;
+            ini_set("SMTP","smtp.namedomain.xxx"); 
+            ini_set("sendmail_from","postmaster@domainname.xxx");
+            mail($to,$name,$message,$headers);
+            echo "Mail Sent.";
+
+        </pre>
+
+        <p>After this write the message succesfull and cancel the content inside the box.</p>
+
+        <p>Page with google maps:</p>
+        <p>Locations it s the array who content all coordinate for the marker and the description for the tooltip</p>
+        <pre>
+        $(document).ready(function ($) {
+         "use strict";
+
+         var Locations = [
+                {
+                    lat: 48.856614,
+                    lon: 2.3522219000000177,
+                    address: 'Paris',
+                    gval: '25.5',
+                    aType: 'Non-Commodity',
+                    title: ,
+                    descr: ,
+                    room: 
+                },
+                    
+        ];
+
+         var mapPosition = new google.maps.LatLng(43.062631, 12.655412);
+
+         var image = 'images/marker.png';
+         var marker;
+         var map;
+
+         function initialize() {
+             var styleArray = [
+                            {
+                                featureType: 'all'
+
+                            }, {
+                                featureType: 'road.arterial',
+                                elementType: 'geometry'
+
+                            }
+                            ];
+
+
+             var mapOptions = {
+                 zoom: 3,
+                 styles: styleArray,
+                 center: mapPosition
+             };
+
+             var infoWindow = new google.maps.InfoWindow({
+                 maxWidth: 160
+             });
+
+             map = new google.maps.Map(document.getElementById('map_canvas_slide'), mapOptions);
+
+             for (var i = 0; i < Locations.length; i++) {
+
+                 marker = new google.maps.Marker({
+                     map: map,
+                     draggable: true,
+                     animation: google.maps.Animation.DROP,
+                     position: new google.maps.LatLng(Locations[i].lat, Locations[i].lon),
+                     icon: image
+                 });
+                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                     return function () {
+                         infoWindow.setContent(Locations[i].title + Locations[i].descr + Locations[i].room);
+                         infoWindow.open(map, marker);
+                     }
+                 })(marker, i));
+
+             }
+         }
+
+         google.maps.event.addDomListener(window, 'load', initialize);
+
+     });
+        </pre>
+
+        <hr>
+		<h3>Structure file css</h3>
+        <p>Css in file layout2.css you find all comment for website structure</p>
+        <pre>
+        
+        /********************************************
+            SLIDE SHOW
+         ********************************************/
+
+        /********************************************
+                    RESERVATION FORM Black
+         ********************************************/
+
+        /********************************************
+                    RESERVATION FORM
+         ********************************************/
+
+        /********************************************
+                    SECTION OFFERTS
+         ********************************************/
+
+        /********************************************
+                    SECTION OFFERTS HOME3
+         ********************************************/
+
+        /********************************************
+                    FOOTER PRICING HOME 3
+         ********************************************/
+
+        /********************************************
+                    PAGE HOME3 
+         ********************************************/
+
+        /********************************************
+                    PAGES ABOUT
+         ********************************************/
+
+        /********************************************
+                    PAGES ABOUT 2
+         ********************************************/
+
+        /********************************************
+                    SKILL
+         ********************************************/
+
+        /********************************************
+                    PAGES SERVICES
+         ********************************************/
+
+        /********************************************
+                    PAGES SERVICES 2
+         ********************************************/
+
+        /********************************************
+                    PAGES GUIDE
+         ********************************************/
+
+        /********************************************
+                    PAGES GALLERY
+         ********************************************/
+
+        /********************************************
+                    PAGES BLOG
+         ********************************************/
+
+        /********************************************
+                    PAGES BLOG RIGHT COLUMN
+         ********************************************/
+
+        /********************************************
+                    PAGES INFORMATION
+         ********************************************/
+
+        /********************************************
+                    PAGES LIST TRIP
+         ********************************************/
+
+        /********************************************
+                    PAGES LIST FLY
+         ********************************************/
+
+        /********************************************
+                    PRICES
+         ********************************************/
+
+        /********************************************
+                    PAGES DETAILS TRIP
+         ********************************************/
+
+        /********************************************
+                    PAGES CONTACT
+         ********************************************/
+
+        /********************************************
+                    FOOTER
+         ********************************************/
+
+        /********************************************
+                    MINI MENU
+         ********************************************/
+        </pre>
+        <br />
+        <p>Other File css</p>
+        <p>Meteo: meteo/example.css</p>
+        <p>List Trip: list/component.css</p>
+        <p>Gallery: gallery/component.css</p>
+        <p>Carousel: carousel/component.css</p>
+
+		<hr>
+		
+
+
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Corsaro</strong></p>
+		
+		
+		<hr class="space">
+        </div>
+	</div><!-- end div .container -->
+</body>
+</html>
