@@ -1,0 +1,65 @@
+
+#meteo {
+	background-image: url(http://placehold.it/1920x1080);
+    background-attachment: fixed;
+    background-repeat: no-repeat!important;
+    width: 100%;
+    padding: 50px 0;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+form { margin-bottom: 1em; }
+
+.weatherFeed {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	margin: 40px 10px;
+	width: 100%;
+	float: left;
+}
+.weatherFeed a { color: #888; }
+.weatherFeed a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.weatherItem {
+	padding: 0.8em;
+	text-align: right;
+	color: #fff;
+	float: left;
+	width: 32.4%;
+    margin-right: 10px;
+}
+.weatherCity { text-transform: uppercase; }
+.weatherTemp {
+	font-size: 28px;
+	font-weight: 900;
+}
+.weatherDesc, .weatherCity, .weatherForecastDay  { font-weight: 600; }
+.weatherDesc { margin-bottom: 0.4em; }
+.weatherRange, .weatherWind, .weatherLink, .weatherForecastItem { font-size: 0.8em; }
+.weatherLink, .weatherForecastItem {
+	margin-top: 0.5em;
+	text-align: left;
+}
+.weatherForecastItem {
+	padding: 0.5em 0.5em 0.5em 80px;
+	background-color: rgba(0,0,0,0.6);
+	background-position: left center;
+	font-size: 11px;
+}
+.weatherForecastDay { font-size: 13px; }
+
+.odd { background-color: rgba(0,0,0,0.4); }
+.even { background-color: rgba(0,0,0,0.4); }
+
+/*Guide Page*/
+
+#meteo-guide .odd { background-color: #276eb0; }
+#meteo-guide .even { background-color: #276eb0; }
+
+#meteo-guide .weatherItem {
+	width: 49%;
+	padding: 30px;
+}
