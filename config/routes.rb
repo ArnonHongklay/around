@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  mount Bloggy::Engine, at: '/blog'
+  root to: 'greetings#hello'
 
-  
+  mount Bloggy::Engine, at: '/'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

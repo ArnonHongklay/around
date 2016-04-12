@@ -1,0 +1,1126 @@
+﻿
+@media only screen and (max-width: 1400px) and (min-width: 1024px)
+{
+    
+.travel-mega-menu .center {
+	float: none;
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.travel-mega-menu .center > div {
+	-o-transform-origin-x: 100%;
+	-ms-transform-origin-x: 100%;
+	-moz-transform-origin-x: 100%;
+	-webkit-transform-origin-x: 100%;
+}
+.travel-mega-menu .center:hover > div {
+	right: auto;
+	left: -226px;
+}
+.travel-mega-menu .center:hover > div:before {
+	right: 50%;
+	left: auto;
+	display:none;
+}  
+}
+
+@media only screen and (max-width: 1400px) 
+{
+.trip-slide-text {
+    font-size: 70px;
+    padding: 20px 0 40px 0;
+}
+.trip-slide-price {
+    top: 11%;
+    font-size: 24px;
+    line-height: 34px;
+}
+.effects .cbp-vm-view-list .cbp-vm-image {width: 47.6%;}
+.main-switcher .cbp-vm-view-list figcaption {width: 52%;}
+.slide-travel-img{ padding: 10px 15px;margin-top: 10px;}
+.slide-travel-img img.star-level {margin: 0 auto 10px auto;}
+.slide-travel-img p{margin-bottom:0; font-size:11px;}
+.all-info-trip .trip-slide-price{line-height: 26px;font-size: 14px;}
+.trip-slide-text{padding: 20px 0 20px 0;}
+.all-info-trip .btn-primary{margin-top:10px;}
+.all-info-trip .trip-slide-price .trip-option ul {margin-top: 10px;}
+
+}
+@media only screen and (max-width: 1200px) 
+{
+.four-col.col-md-3 {
+    width: 23.5%;
+}
+/*meteo i the slider*/
+.meteo-top-travel.meteo-slider-top .weatherItem {
+    width: 47%;
+}
+.meteo-top-travel.meteo-slider-top {
+    padding: 0;
+    width: 50%;
+}
+
+/*meteo blu color*/
+.meteo-top-travel .weatherItem {
+    width: 48%;
+}
+.meteo-top-travel {
+    padding: 0;
+    width: 100%;
+}
+.content-man{display:none;}
+.content-man.mandesc{display:block;}
+}
+@media only screen and (max-width: 1200px) and (min-width: 1030px)
+{
+#home3 .col-md-4 {width: 48%;}
+#home3 .view3-fifth .mask {
+    -webkit-transform: translateY(276px);
+    -moz-transform: translateY(276px);
+    -o-transform: translateY(276px);
+    -ms-transform: translateY(276px);
+    transform: translateY(276px);
+}
+
+}
+@media only screen and (max-width: 1030px) 
+{
+.caption .largewhitebg_button1{padding:7px 20px; font-size:13px}
+.caption .largewhitebg_button1:hover{padding:7px 20px; font-size:13px}
+
+#mobile-menu-01 .line-logo{padding: 0 30px 5px 30px;}
+.header-lang a{ padding: 0px 5px 0px 15px;} 
+.langs-drop{left: -92px;}
+
+.caption.black-b1.letter{font-size:60px;}
+
+.top-mega-menu {
+	position: relative;
+	margin-top: 0;
+}
+.travel-mega-menu-mobile li.line-logo:hover a{background: #fff;}
+.top-content {margin-top: 0;}
+.top-mega-menu .container {display:none;}
+
+#mobile-menu-01 {display:block;}
+.travel-mega-menu-mobile {display:none;}
+.all-info-trip .trip-slide-price .trip-option{display:none}
+
+.travel-desc-agency.tt-ipad{width:100%}
+
+/*Hero Slider*/
+
+.cd-hero-slider .cd-img-container img{width:80%}
+
+.cd-hero-slider .cd-full-width, .cd-hero-slider .cd-half-width{
+    padding-top: 70px;
+}
+/*End*/
+
+.why-choose-us .box-middle-img{left:65%;}
+.home-page {margin-top: 0;}
+#mobile-menu-01 li.line-logo {
+	background: #fff;
+	display: block;
+	float: none;
+}
+#mobile-menu-01 li.k-opn {display:table;}
+/*Form*/
+.container-slider.removeslide {
+	background: url('../images/slider6.jpg') no-repeat top left;
+    width: 100%;
+    height: 680px;
+    position: relative;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+.home-page.removeslide {display:none;}
+.container-reservation.inside-slider {top: 160px;}
+
+#reservation-form .reservation-hotel .step-where, #reservation-form .step-check, #reservation-form .step-who {
+	width: 100%;
+	padding: 0;
+}
+#reservation-form .step-check .cc-out, #reservation-form .step-who .child {padding-right: 0;}
+#reservation-form .col-sm-2 button {margin-top: 20px;}
+#reservation-form.pos-inside-slide .reservation-hotel, #reservation-form.pos-inside-slide .reservation-flight {
+	padding: 10px 30px 10px 30px;
+}
+#reservation-form h3 {font-size: 13px;}
+#reservation-form label {font-size: 11px;}
+#reservation-form .search-opt {margin-bottom: 0;}
+#reservation-form .flight-where, #reservation-form .fly-check{
+    width: 50%;
+    padding-right:0;
+}
+#reservation-form .fly-who {
+	float: none;
+	width: 100%;
+	padding: 0;
+}
+/*Midle slider*/
+.trip-slide-price {
+	top: 5%;
+    padding: 20px 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.trip-slide-text {font-size: 40px;}
+.all-info-trip .trip-slide-price span{font-size: 20px;}
+.all-info-trip .btn-primary {margin-top: 5px;}
+
+.all-info-trip.pannel-radius .trip-slide-price {
+    height: 100%;
+    width: 40%;
+    top: -60px;
+    padding: 20px 30px;
+}
+
+.newsletterfooter input[type="text"] {width: 165px;}
+.popover-icon {display: none;}
+/*Top offert*/
+.view{margin: 0px 10px 0 0;}
+.home4-section .view-fifth .mask {padding: 0px 10px 20px 10px;}
+.view-fifth .mask .main .price{padding: 3px 0;}
+
+/*Home 4 lion*/
+.mapcont {display:none;}
+.caption.black-b1 {font-size: 33px;}
+#reservation-form .col-sm-2 button.b-frm1 {margin-top: 60px;}
+.home4 .view3 .mask, .home4 .view3 .content {position: relative;}
+.home4 .col-md-4 {width: 32.2%;}
+.home4 .view3-fifth .mask {
+	-webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+.home4 .view3-fifth img{margin: 0 auto;}
+.home4 .view3-fifth p {opacity: 1;}
+.home4 .view3-fifth:hover img {
+   -webkit-transform: translateY(0);
+   -moz-transform: translateY(0);
+   -o-transform: translateY(0);
+   -ms-transform: translateY(0);
+   transform: translateY(0);
+}
+
+.grid figcaption i {margin-right: 5px;}
+.grid figcaption {padding: 15px;}
+#parallax-footer-home3 .col-md-3 .price {padding: 10px 15px;}
+
+#tt1 .fullwidthbanner-container .fullwidthbanner {margin-top: 0;}
+#reservation-form.home3 .colbtn {margin-top: 61px;}
+#reservation-form.home3 .reservation-flight .colbtn {margin-top: 31px;}
+#parallax-footer-home3 .price-title h3{padding:0}
+/*Home 2*/
+.fullwidthbanner-container .fullwidthbanner {margin-top: 0;}
+.col-md-4.prices {margin-bottom: 20px;}
+#reservation-form.home2 .colbtn {margin-top: 61px;}
+#reservation-form.home2 .reservation-flight .colbtn {margin-top: 31px;}
+.grid li {
+    width: 33%;
+    float: left;
+}
+/*Oxy Slider*/
+
+.view-fifth .mask .main .price{width:35%;}
+.four-col.col-md-3 {
+    width: 24%;
+}
+
+/*About 1*/
+
+.number-structure-left {
+  margin: 0 15px 20px 0;
+  width: 48%;
+  float: left;
+}
+.desc-office1.about1{ margin-top: 20px;}
+
+/*page guide*/
+#meteo-guide .weatherItem {width: 48%;}
+.weatherFeed {margin: 40px 0;}
+.content-number-left {float: left;}
+.about-section-top {margin-top: 0;}
+
+/*services1*/
+.service-square.col-md-3 {width: 23.5%;}
+.view-service img{width:20%;}
+/*Servies2*/
+.trip-slide-text.prague{font-size:60px;}
+.trip-slide-text.nature {
+    left: 37%;
+}
+.trip-slide-text.egypt {
+    left: 40%;
+}
+.trip-slide-text.polynesie {
+    left: 33%;
+}
+.trip-slide-text.francisco {
+    left: 25%;
+}
+.service2-row img {
+    width: 53%;
+}
+/*Information Page*/
+.customer-image {
+    margin-left: 23%;
+}
+.info-square i{float:none;}
+
+.info-square h3, .info-square p{
+    margin-left:0;
+    text-align:center;
+}
+.col-md-6.box-information{width:49%;}
+
+/*Page List trip*/
+.main-switcher figcaption h3{float:none;}
+.cbp-vm-options a.cbp-vm-icon {
+    display: none;
+}
+.cbp-vm-options{height: 64px;}
+
+/*Page details*/
+.main-details #bx-pager a img{
+    margin-bottom:3px;
+}
+
+/*list fly*/
+.view-about {
+	width: 23.8%;
+}
+
+/*Gallery 4 column*/
+#gallery .col-md-3 {
+    width: 32%;
+}
+
+/*Gallery 3 column*/
+#gallery .col-md-4 {
+    width: 32%;
+}
+
+/*Page Meteo*/
+.weatherItem{width:32%;}
+
+
+/*Contact*/
+#top-offerts .contact-square.col-md-4 {
+    width: 32%;
+}
+#map_container{margin-top:0;}
+
+
+/*Pricing*/
+.price-table-circle{padding: 20px 35px 10px 35px;}
+.prices .price-table-circle ul li p{padding: 4px 0;}
+
+.all-info-trip.long-pannel .trip-slide-price{
+    height: 100%;
+    width: 40%;
+}
+.all-info-trip.long-pannel .trip-slide-text.prague {
+    font-size: 50px;
+}
+.all-info-trip.long-pannel .trip-slide-price .trip-big-price {
+    margin-top: 30px;
+}
+.all-info-trip.long-pannel .trip-slide-price .trip-big-price span {
+    font-size: 70px;
+}
+}
+
+
+@media only screen and (max-width: 1000px) 
+{
+#mobile-menu-01 .line-logo {padding: 0 20px 5px 20px;} 
+.text-center.top-txt-title{margin-top: 200px;}  
+.text-center.top-txt-title.best-promo {
+    margin-top: 80px;
+}
+.why-choose-us .box-middle-img{display:none;}
+
+.trip-slide-text .line-price.clear{display:block;}
+
+/* Slider */
+
+.container-slider.removeslide-ipad {
+	background: url('../images/slider6.jpg') no-repeat center center;
+    width: 100%;
+    height: 680px;
+    position: relative;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+.home-page.removeslide-ipad {display:none;}
+
+.reservation-home4.blue-reserv-form {
+    margin-top: -280px;
+}
+.reservation-home4 .adult-book{padding-left:0;}
+.reservation-home4 .cc-in{padding-right:0;}
+.reservation-home4 .box-fly-book, .reservation-home4 .adultfly{padding-right:0;}
+.reservation-home4 #reservation-form #flights-tab .child.md-ch{padding-right:0;}
+
+#flights-tab .flight-when,#flights-tab .flight-who,#flights-tab .flight-who .adultfly{padding-right:0;}
+
+/*Form Booking*/
+.container-reservation.inside-slider {top: 140px;}
+#top-offerts .col-md-4, #lastminute-offerts .col-md-4 {
+	width: 100%;
+	padding: 0 30px;
+	margin-bottom:20px;
+	float:left;
+}
+.caption.small-txt, .caption .largewhitebg_button1{display:none;}
+/*Slide midle*/
+.trip-slide-text {
+	padding: 20px 0;
+	font-size: 55px;
+}
+.trip-slide-text.prague{font-size:65px;}
+.trip-slide-price {padding: 10px 20px;}
+.all-info-trip .trip-slide-price p{display:none;}
+.all-info-trip .btn-primary {
+    margin-top: 15px;
+    float: left;
+}
+
+.newsletterfooter input[type="submit"] {float: none;}
+.newsletterfooter input[type="text"] {width: 200px;}
+.footer-small-desc {padding: 0;}
+
+.parallax-home4 .middle-text-adv{padding: 0 30px; margin-bottom: 50px;}
+.parallax-home4 .middle-text-adv h3{margin-top: 0px;}
+
+.all-info-trip.pannel-radius .trip-slide-price .trip-big-price{display:block;margin-top: 80px;}
+.all-info-trip.pannel-radius .trip-slide-price .trip-big-price span{font-size:70px;}
+.all-info-trip.pannel-radius .btn-primary { margin-top: 25px;}
+
+#top-offerts.box-tr-square .col-md-4, #lastminute-offerts.box-tr-square .col-md-4{width:100%;}
+
+.parallax-home .middle-text-adv{padding: 0 30px; margin-bottom:20px;}
+
+.all-info-trip.long-pannel .trip-slide-price .trip-big-price {
+    margin-top: 60px;
+    display: block;
+}
+
+/*Slide Hero*/
+.cd-slider-nav a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/*End*/
+
+/*Oxy Page*/
+
+.bx-about2.oxy-tmp .trip-slide-price{padding: 10px 20px;}
+.bx-about2.oxy-tmp .trip-slide-text.prague {
+    font-size: 40px;
+}
+.bx-about2.oxy-tmp .trip-slide-price p{
+    font-size: 11px;
+}
+
+#parallax-footer.price-color-log.home-map{padding:120px 0;}
+
+.meteo-top-travel.meteo-slider-top{display:none;}
+#reservation-form .reservation-flight .child.md-ch{padding-right:15px;}
+/*Home 4 lion*/
+.home4 .col-md-4 {
+	width: 100%;
+	padding: 0 0px;
+}
+.home4 .view3 img {box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);}
+#parallax-footer-home3.home4 .col-md-3 .price {margin-bottom: 20px;}
+#reservation-form.home3 .flight-where, #reservation-form.home3 .fly-check {
+    width: 100%;
+    padding-left:15px;
+}
+.caption.white-b1 span.price-sld {font-size: 45px;}
+.caption.white-b1 {
+	font-size:63px;
+	margin-top: -20px;
+}
+.caption.white-b1.best {margin-top: -40px;}
+.caption.white-b1.txt-min-left.start, .caption.black-b1.txt-min-left.start {margin-left:-70px;}
+.black-button.txt-min-left {margin-left:-135px;}
+.content-man.mandesc{display:none;}
+/*Home 2*/
+.tp-simpleresponsive >ul li {width: 80%;}
+.caption.blue-b4 {
+	width: 100%;
+	padding: 10px 25px 10px 25px;
+}
+.caption.blue-b4.banner-blue {margin-top: -30px;	}
+.caption.blue-b4{
+    left:0 !important;
+    margin-top: -20px;
+    width:80%;
+}
+.caption.blue-b4{font-size:30px;}
+
+.grid li {width: 50%;}
+
+#reservation-form .home2 .flight-where, #reservation-form .home2 .flight-when{
+    width: 100%;
+    padding:0 15px;
+}
+
+.tab-content .res-pad {padding-right: 0;}
+#reservation-form .adul-h,#reservation-form .child{padding:0;}
+#reservation-form .home2 .adultfly{padding:0;}
+
+.container-reservation.inside-slider .room-book,.container-reservation.inside-slider .adult-book{padding-right:0;}
+
+/*Top Offert*/
+
+.four-col.col-md-3 {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/*Help Info*/
+
+.help-info{margin-bottom:40px;}
+
+.info-img-help{float:left;}
+.box-info-help {
+    width: 85%;
+    float: left;
+    margin-top: 10px;
+}
+.info-img-help {
+    float: left;
+}
+
+/*About 1*/
+.desc-office .img-office {
+    float: none;
+    margin-bottom: 20px;
+}
+.view-about .social-icons{
+    display:none;
+}
+.desc-office1.about1{position:relative;}
+.img-office{padding:0;}
+.about-text-center {
+    text-align: center;
+    width: 100%;
+}
+.view-fifth .mask .main h3{font-size:14px;}
+
+/*About 2*/
+.about-square.col-md-6 {
+	width: 100%;
+}
+/*services1*/
+.service-square.col-md-3 {
+  width: 100%;
+}
+
+/*services2*/
+.services2-info.last-info {
+    padding-right: 0;
+    padding-left: 0;
+}
+.services2-info {
+    padding-left: 0;
+    padding-right:0;
+    float: left;
+    width: 100%;
+}
+/*Information Page*/
+.customer-image {
+    margin-left: 15%;
+}
+.col-md-6.box-information {
+    width: 100%;
+    float: left;
+}
+.about-color-parallax h3{font-size: 55px;}
+
+/*Gallery 4 Column*/
+dl {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    position: relative;
+}
+#gallery .col-md-3 {
+    width: 31.5%;
+}
+.gallery-stars img{padding: 10px 0;}
+.gallery-img-title h3{font-size:14px;}
+.gallery-img-title h3{float:none;}
+.gallery-img-title{ text-align:left;}
+
+/*Gallery 3 Column*/
+#gallery .col-md-4 {
+    width: 31.5%;
+}
+
+/*Blog right*/
+.sidepanel {
+    margin-top: 50px;
+}
+.blog-small-desc {
+    margin-top: 10px;
+    margin-right: 30px;
+    float: left;
+}
+.content-wrap section.content-current {
+    display: block;
+    width: 100%;
+}
+.footer-small-img{float:left;}
+
+/*Blog Left*/
+.left-clm {float: none;}
+
+/*Guide*/
+#horizontalTab{width:100%;}
+.guide-story-info{
+    padding-left:0;
+    margin-top:20px;
+}
+.histo-img {
+    padding-left: 0;
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+.number-structure-left {
+  margin: 0 10px 20px 0;
+  width: 47.6%;
+}
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {background-color: transparent;}
+.culture-img {
+    float: left;
+    padding-left: 0;
+}
+/*meteo*/
+.weatherItem {width: 31.5%;}
+/*Contact*/
+#top-offerts .contact-square.col-md-4 {
+    width: 31.5%;
+    float: left;
+}
+.fc-content2 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.fc-content {padding-right: 0;}
+/*Pricing*/
+#parallax-footer.price-color-log{padding: 100px 0 0 0;}
+.col-md-4.prices{margin-left:auto; margin-right:auto;width:48%;}
+.price-color-log .content-blue{right:0;}
+.price-color-log .content-green{top:-40px;}
+.price-color-log .content-red{left:0;top:-150px;}
+
+#parallax-footer-home3 .col-md-3 .price{margin-bottom:20px;}
+/*Footer*/
+.button-banner a{margin:0;}
+.logo-footer {width: 20%;}
+.footer-small-desc {
+    padding: 0;
+    float: left;
+    margin: 10px 10px;
+}
+.footer-small-desc .r-more{float:left;}
+.newsletterfooter i{
+    padding: 9px 0px;
+    margin-left: -22px;
+}
+#footer h3{margin-top:20px;}
+}
+
+@media only screen and (max-width: 740px) 
+{
+.top-contact{display:none;}
+.all-info-trip.long-pannel .trip-slide-price .trip-big-price {display: none;}
+    
+#loading-center-absolute{left: 39%;}
+.text-center.top-txt-title{margin-top: 100px;} 
+#reservation-form .step-check .cc-in {padding: 0;}
+#reservation-form .step-who .room-book, #reservation-form .step-who .adult-book, #reservation-form .step-who .child {
+	padding: 0
+}
+#dtlBtn{display:none;}
+.container-slider.removeslide {height: 850px;}
+.container-slider.removeslide-ipad {height: 850px;}
+#reservation-form .flight-where, #reservation-form .fly-check {
+	width: 100%;
+	padding:0;
+}
+#reservation-form .fly-who .adultfly, #reservation-form .fly-who .child {
+	padding: 0;
+}
+/*Middle Slide*/
+.trip-slide-text {
+    padding: 15px 0;
+    font-size: 50px;
+}
+
+/*Home 3 lion*/
+.tab-content .hotel-when, .tab-content .hotel-who {padding: 0;}
+.adul-h, .child {padding: 0;}
+.tab-content .res-pad {padding: 0;}
+#reservation-form.home3 .flight-where, #reservation-form.home3 .fly-check {
+    width: 100%;
+    padding-left:0px;
+}
+#reservation-form .flight-where, #reservation-form .flight-when,#reservation-form .flight-who {
+	padding: 0;
+}
+#reservation-form .flight-who .adultfly {padding-right: 0;}
+
+/*Home2*/
+.caption.blue-b4.banner-blue, .caption.blue-b4.banner-green, .caption.blue-b4.banner-red {
+	display:none;
+}
+#reservation-form .home2-hotel-where{padding:0;}
+#reservation-form .colbtn{padding:0;}
+#reservation-form .home2 .flight-where, #reservation-form .home2 .flight-when {
+    width: 100%;
+    padding: 0;
+}
+/*Services*/
+.view-service img {width: 30%;}
+/*Information Page*/
+.customer-image {display:none;}
+.about-color-parallax h3 {font-size: 45px;}
+
+
+}
+@media only screen and (max-width: 740px) and (orientation: landscape)
+{
+.info-parallax{height: 300px;}
+.about-color-parallax {height: 300px;}
+.view-about {width: 23.3%;}
+.all-info-trip .trip-slide-price{padding:30px 30px;}
+/*Guide*/
+#tab-2 .histo-img {
+    padding-left: 0;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.culture-img {
+    float: left;
+    padding-left: 0;
+    text-align: right;
+}
+/*Prices*/
+.col-md-4.prices {width: 52%;}
+}
+@media only screen and (max-width: 700px) 
+{
+#top-offerts .col-md-4,#lastminute-offerts .col-md-4 {
+	width: 100%;
+	padding: 0 0px;
+}
+.container-slider.removeslide {
+    height: 850px;
+}
+.container-slider.removeslide-ipad {
+    height: 850px;
+}
+.container-slider {
+    height: auto;
+}
+.tp-bullets.simplebullets {
+	display:none;
+}
+.tp-leftarrow.large {
+	  background: url(../assets/arrow_small_left.png) no-repeat top left;
+      width: 31px;
+      height: 30px;
+}
+.tp-rightarrow.large {
+	  background: url(../assets/arrow_small_right.png) no-Repeat top left;
+      width: 31px;
+      height: 30px;
+}
+.all-info-trip.pannel-radius .trip-slide-price{display:none;}
+.top-txt-title span{font-size:60px;}
+.box-info-help{width:100%}
+
+.bx-about2.oxy-tmp .trip-slide-price{display:none;}
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape)
+{
+.cbp-contentslider h3 span {
+  margin-left: 70px;
+}
+.cbp-contentslider h3 span.country-name1 {
+  margin-left: 70px;
+}
+.grid li {
+  width: 50%;
+}
+.container-reservation.inside-slider {
+    top: 90px;
+}
+/*Middle Slide*/
+.trip-slide-text {
+    padding: 10px 0;
+    font-size: 40px;
+}
+.all-info-trip .trip-slide-text {
+    padding: 10px 0;
+    font-size: 30px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/*guide*/
+.number-structure-left {
+  width: 48%;
+}
+/*about*/
+.view-about {
+  width: 47%;
+}
+.desc-office .img-office {
+   float: none;
+   margin-right: 0px; 
+}
+.desc-office .img-office img {
+	width: 100%;
+}
+.desc-office h3 {
+	margin-top: 20px;
+}
+
+/*Gallery 4 Column*/
+
+#gallery .col-md-3 {
+    width: 31.3%;
+}
+
+/*Gallery 3 Column*/
+#gallery .col-md-4 {
+    width: 31.3%;
+}
+/*meteo*/
+.weatherItem {
+    width: 100%;
+    margin-bottom:20px;
+}
+.weatherFeed {
+    margin: 0;
+}
+/*Prices*/
+
+.col-md-4.prices {
+    width: 60%;
+}
+
+/*Contact*/
+#top-offerts .contact-square.col-md-4 {
+    width: 31.2%;
+    float: left;
+}
+
+}
+
+@media only screen and (max-width: 500px) 
+{
+ul.search-opt li a {
+	padding: 0 20px;
+}
+.meteo-top-travel .weatherItem {
+    width: 100%;
+}
+.meteo-top-travel .weatherFeed {
+    margin: 0px 0px;
+}
+.text-center p{width:100%;}
+.payment-card{width:100%; margin-top:5px; text-align:left;}
+/*Top Offert*/
+
+.four-col.col-md-3 {
+    width: 100%;
+}
+.top-txt-title span{display:none;}
+/*Middle Slide*/
+.trip-slide-text,.trip-slide-price{display:none;}
+.bx-about2 .bx-wrapper .bx-controls-direction .bx-prev, .bx-about2 .bx-wrapper .bx-controls-direction .bx-next{margin-top:-37px;}
+.bx-wrapper .bx-viewport {
+    height: 200px!important;
+}
+/*Home 3 lion*/
+.caption.white-b1 span.price-sld {
+	  padding: 30px 20px;
+	  font-size: 25px;
+}
+.black-button.txt-min-left {
+  margin-left: -155px;
+}
+.tab-content .res-pad {
+	padding: 0;
+}
+
+.adul-h, .child {
+	padding: 0;
+}
+.cbp-contentslider h3 span {
+  margin-left: 70px;
+}
+#reservation-form .reservation-tabs {
+  padding: 0px 10px;
+}
+.cbp-contentslider h3 span.country-name1 {
+  margin-left: 70px;
+}
+.grid li {
+  width: 100%;
+}
+#home3 .col-md-4 {
+	padding: 0;
+}
+
+/*guide*/
+.number-structure-left {
+  width: 100%;
+}
+
+/*about*/
+.desc-office .img-office {
+	margin-right: 0
+}
+.desc-office h3 {
+	margin-top: 20px;
+	float: left;
+    width: 100%;
+}
+.view-fifth.view-about img {
+	width: 100%;
+	margin: 0 auto;
+}
+.view-about {
+  width: 100%;
+}
+
+
+/*about 2*/
+.about-color-parallax h3 {
+	font-size: 45px;
+}
+/*Services*/
+.view-service img {
+    width: 100%;
+}
+.mask-service{
+    padding:10px;
+}
+/*Services2*/
+.service2-row img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#parallax_slide .bx-wrapper img {
+    width: 100%;
+    height: 200px;
+}
+
+/*Information page*/
+.about-color-parallax h3 {
+    font-size: 45px;
+    line-height: 50px;
+}
+.box-information img {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.mask-information {
+    float: left;
+    width: 100%;
+}
+/*Page List trip*/
+.txt-sort{margin-left:10px;}
+.click-nav ul li span, .click-nav-location ul li span{font-size:11px;}
+.click-nav ul .clicker, .click-nav-location ul .clicker{padding: 5px 26px;}
+
+/*list fly*/
+.effects .cbp-vm-view-list .list-fly .cbp-vm-image {
+  width: 100%;
+}
+.main-switcher .cbp-vm-view-list ul.sandbox.list-fly figcaption {
+	width: 100%;
+}
+/*Gallery 4 column*/
+#gallery .col-md-3 {
+    width: 100%;
+}
+.filter li{ padding: 5px 5px 7px 5px; font-size:11px;}
+
+/*Gallery 3 column*/
+#gallery .col-md-4 {
+    width: 100%;
+}
+/*Blog*/
+.blog-view img{height:200px;}
+.blog-info li{margin-bottom: 5px;}
+
+/*guide*/
+.info-box-guide{
+    display:none;
+}
+#tab-2 .histo-img, #tab-4 .histo-img {
+    width: 100%;
+}
+#tab-4 .col-md-9{
+    padding-left:0;
+}
+/*meteo*/
+#meteo-guide .weatherItem {
+    width: 100%;
+    margin-bottom:20px;
+}
+.weatherItem {
+    width: 100%;
+    margin-bottom:20px;
+}
+
+/*Prices*/
+
+.col-md-4.prices {
+    width: 90%;
+}
+
+/*Contact*/
+#top-offerts .contact-square.col-md-4 {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.last-minute-banner h1{font-size:26px;}
+.footer-small-desc{width:50%;}
+.copyright {
+    font-size: 11px;
+    width: 100%;
+}
+.logo-footer {width: 50%;}
+}
+
+@media only screen and (max-width: 400px) 
+{
+ul.search-opt li a {
+	padding: 0 8px;
+	font-size: 11px;
+}
+.why-choose-us .why-choose-us-wrapper img {
+    display:none;
+}
+.trip-slide-price {
+    padding: 10px 20px;
+}
+
+/*Home 3 lion*/
+.cbp-contentslider h3[class^="icon-"]:before, .cbp-contentslider h3[class*=" icon-"]:before {
+	width: 1em;
+}
+.cbp-contentslider h3 span {
+  margin-left: 40px;
+}
+
+.cbp-contentslider h3 span.country-name1 {
+  margin-left: 40px;
+}
+
+.title-about {
+	font-size: 16px;
+}
+.container-reservation.inside-slider {
+    top: 80px;
+}
+/*Services2*/
+#parallax_slide .bx-wrapper img {
+    width: 100%;
+    height: 150px;
+}
+.bx-wrapper .bx-viewport {
+	height: 150px!important;
+}
+/*Gallery 4 column*/
+.filter li{ margin-bottom:5px;}
+
+/*Blog*/
+.pagination>li.first, .pagination>li.prev {
+    margin-right: 5px;
+}
+.pagination>li.first>a, .pagination>li.prev>a, .pagination>li.next>a, .pagination>li.last>a {
+    padding: 0 10px;
+}
+
+/*Prices*/
+
+.col-md-4.prices {
+    width: 100%;
+}
+.logo-footer {width: 50%;}
+}
+
+@media only screen and (max-width: 330px) 
+{
+#loading-center-absolute {
+    left: 34%;
+}
+.parallax-home4 .middle-text-adv h3{font-size:26px;}
+.number-structure-left {
+   width: 100%;
+}
+.title-about {
+	margin-top: 22px;
+	font-size: 11px;
+	margin-left: 0px;
+}
+.about-section-top .breadcrumbs li {
+	font-size: 11px;
+}
+.parallax-home .middle-text-adv h3{font-size:30px;margin-top:50px;}
+/*about 2*/
+.about-color-parallax h3 {
+	font-size: 35px;
+}
+
+/*Page list trip*/
+.txt-sort {
+    display:none;
+}
+/*Blog*/
+.pagination>li.first>a, .pagination>li.prev>a, .pagination>li.next>a, .pagination>li.last>a
+{padding: 0 10px;}
+.pagination>li>a{padding: 0 7px;}
+.pagination>li{margin-right:3px;}
+.pagination>li.first, .pagination>li.prev {
+    margin-right: 5px;
+}
+
+/*Pricig*/
+.price-table-circle .price-money h3{padding:0;}
+.prices .price-table-circle ul li p {
+    padding: 1px 0;
+}
+.newsletterfooter input[type="submit"] {
+    float: left;
+}
+}

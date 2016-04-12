@@ -1,5 +1,3 @@
-@import "summernote";
-
 /*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
@@ -9,5 +7,6 @@
  *= require bloggy/bootstrap/bootstrap-responsive.min
  *= require bloggy/bootstrap/bootstrap-datepicker
  *= require select2
+ *= require summernote
  *= require bloggy/admin/posts
 */
