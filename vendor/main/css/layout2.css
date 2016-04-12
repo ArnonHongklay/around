@@ -1523,9 +1523,9 @@ figure .img-effect-flash::before {
    background: #000;
    color: #fff;
    text-transform: uppercase;
-   -webkit-box-shadow: 0 0 1px #000;
+   /*-webkit-box-shadow: 0 0 1px #000;
    -moz-box-shadow: 0 0 1px #000;
-   box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;*/
 }
 .home4 .view3 a.info:hover {
    -webkit-box-shadow: 0 0 5px #000;
