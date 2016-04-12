@@ -136,9 +136,10 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    compass-rails (1.1.7)
-      compass (>= 0.12.2)
-      sprockets (<= 2.11.0)
+    compass-rails (3.0.2)
+      compass (~> 1.0.0)
+      sass-rails (< 5.1)
+      sprockets (< 4.0)
     concurrent-ruby (1.0.1)
     connection_pool (2.2.0)
     database_cleaner (0.9.1)
@@ -391,7 +392,7 @@ DEPENDENCIES
   capybara (~> 1.1.4)
   capybara-webkit
   coffee-rails (~> 4.1.0)
-  compass-rails (~> 1.1)
+  compass-rails (= 3.0.2)
   database_cleaner (~> 0.9.1)
   devise
   factory_girl_rails (~> 1.4.0)
