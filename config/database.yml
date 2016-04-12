@@ -82,4 +82,5 @@ production:
   <<: *default
   database: around_production
   username: around
-  password: <%= ENV['AROUND_DATABASE_PASSWORD'] %> || "Arnon007"
+  # password: <%= ENV['AROUND_DATABASE_PASSWORD'] %>
+  password: "Arnon007"

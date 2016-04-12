@@ -21,6 +21,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
+require 'capistrano/rails/console'
 
 # require 'capistrano/rbenv'
 set :rbenv_type, :user # or :system, depends on your rbenv setup
