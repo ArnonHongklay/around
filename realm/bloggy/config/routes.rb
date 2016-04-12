@@ -1,5 +1,5 @@
 Bloggy::Engine.routes.draw do
-  # root to:  "posts#index"
+  root to:  "posts#index"
   get "/page/:page", to:  "posts#index", as:  "posts_page"
   get "/feed" => "posts#feed", as:  "feed", defaults: {format: :rss}
 
