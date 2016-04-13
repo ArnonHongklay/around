@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: "postgres://around:Arnon007@localhost/around_production"
   # database: around_production
   # username: around
   # # password: <%= ENV['AROUND_DATABASE_PASSWORD'] %>
