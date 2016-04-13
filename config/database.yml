@@ -80,7 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: around_production
-  username: around
-  # password: <%= ENV['AROUND_DATABASE_PASSWORD'] %>
-  password: "Arnon007"
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: around_production
+  # username: around
+  # # password: <%= ENV['AROUND_DATABASE_PASSWORD'] %>
+  # password: "Arnon007"
