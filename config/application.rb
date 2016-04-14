@@ -59,5 +59,7 @@ module Around
     config.linkedin_url             = "http://www.linkedin.com/in/jipiboily"
     config.github_username          = "jipiboily"
     config.show_rss_icon            = true
+
+    config.preview_size             = 1000
   end
 end

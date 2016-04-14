@@ -3,7 +3,7 @@ class BlogAdminFormBuilder < ActionView::Helpers::FormBuilder
 
   %w[text_field text_area password_field collection_select select file_field].each do |method_name|
     define_method(method_name) do |name, *args|
-      content_tag :div, class:  "field" do
+      content_tag :div, class: "field" do
         field_label(name, *args) + super(name, *args)
       end
     end

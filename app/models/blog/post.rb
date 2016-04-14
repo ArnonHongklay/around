@@ -29,7 +29,7 @@ class Blog::Post < ActiveRecord::Base
   end
 
   def full_url
-    "#{Rails.application.config.routes.url_helpers.root_path}#{self.url}"
+    "#{Rails.application.routes.url_helpers.root_path}#{self.url}"
   end
 
   def published_in_future?

@@ -6,7 +6,6 @@ module Blog
     include Blog::TagsHelper
 
     def blog_admin_form_for(object, options = {}, &block)
-      binding.pry
       options[:builder] = BlogAdminFormBuilder
       form_for(object, options, &block)
     end
