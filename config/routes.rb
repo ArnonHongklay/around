@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # mount Bloggy::Engine, at: '/blog'
   namespace :blog do
-    get "/" => "posts#index"
+    get "/" => "posts#index", as: "show"
     get "/page/:page", to:  "posts#index", as:  "posts_page"
     get "/feed" => "posts#feed", as:  "feed", defaults: {format: :rss}
 
