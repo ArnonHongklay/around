@@ -20,7 +20,7 @@
 
     <%= stylesheet_link_tag 'settings', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'travel-mega-menu', media: 'all', 'data-turbolinks-track' => true %>
-    
+
     <%= stylesheet_link_tag 'jquery.bxslider', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'meteo/example', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -41,8 +41,10 @@
     <div id="loader"></div>
   </div>
   <%= render partial: "greetings/header" %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <%= yield %>
-  <%= render partial: "greetings/footer" %>  
+  <%= render partial: "greetings/footer" %>
 
 </body>
 </html>
