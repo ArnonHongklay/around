@@ -28,86 +28,12 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-
-<div id="loader-wrapper">
+  <div id="loader-wrapper">
     <div id="loader"></div>
-</div>
-<%= yield %>
+  </div>
+  <%= render partial: "greetings/header" %>
+  <%= yield %>
+  <%= render partial: "greetings/footer" %>  
 
-<%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
-<%= javascript_include_tag 'modernizr', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'jquery-1.10.1.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'jquery-migrate-1.2.1.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'jquery-ui-1.10.4.custom.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'jquery.easing.1.3', "data-turbolinks-track" => true %>
-<!--Preload-->
-<script type="text/javascript">
-    $(document).ready(function ($) {
-        "use strict";
-        try {
-            var myTimer = 0; clearTimeout(myTimer);
-            myTimer = setTimeout(function () { $("#loader-wrapper").slideUp() }, 2000);
-        } catch (err) {
-        }
-    });
-</script>
-
-<%= javascript_include_tag 'jquery.themepunch.plugins.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'jquery.themepunch.revolution.min', "data-turbolinks-track" => true %>
-<script type="text/javascript">
-    var tpj = jQuery;
-    tpj(document).ready(function () {
-        "use strict";
-        if (tpj.fn.cssOriginal !== undefined)
-            tpj.fn.css = tpj.fn.cssOriginal;
-        tpj('.fullwidthbanner').revolution(
-    {
-        delay: 9000,
-        startwidth: 1170,
-        startheight: 646,
-        onHoverStop: "on",
-        thumbWidth: 100,
-        thumbHeight: 50,
-        thumbAmount: 4,
-        hideThumbs: 200,
-        navigationType: 'none',
-        navigationArrows: "verticalcentered",   //nexttobullets, verticalcentered, none
-        navigationStyle: "large",
-        touchenabled: "on",
-        navOffsetHorizontal: 0,
-        navOffsetVertical: 20,
-        fullWidth: "on",
-        shadow: 0
-    });
-    });
-</script>
-
-
-<%= javascript_include_tag 'bootstrap.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'bootstrap-hover-dropdown.min', "data-turbolinks-track" => true %>
-<!--Carousel-->
-<%= javascript_include_tag 'carousel/modernizr.custom', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'carousel/jquery.cbpContentSlider.min', "data-turbolinks-track" => true %>
-<script type="text/javascript">
-$(function () {
-    "use strict";
-    $('#cbp-contentslider').cbpContentSlider();
-});
-</script>
-<!-- Gallery -->
-<%= javascript_include_tag 'gallery/imagesloaded.pkgd.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'gallery/masonry.pkgd.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'gallery/classie', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'gallery/cbpGridGallery', "data-turbolinks-track" => true %>
-<script type="text/javascript">
-$(function () {
-    "use strict";
-    new CBPGridGallery(document.getElementById('grid-gallery'));
-});
-</script>
-<%= javascript_include_tag 'waypoints.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'script', "data-turbolinks-track" => true %>
-  </body>
+</body>
 </html>
