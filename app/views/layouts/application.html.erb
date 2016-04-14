@@ -15,8 +15,15 @@
     <%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'font-awesome-4.4.0/css/font-awesome', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'jquery-ui-1.10.4.custom.min', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'oxy_slider/slider', media: 'all', 'data-turbolinks-track' => true %>
+
     <%= stylesheet_link_tag 'settings', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'travel-mega-menu', media: 'all', 'data-turbolinks-track' => true %>
+    
+    <%= stylesheet_link_tag 'jquery.bxslider', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'meteo/example', media: 'all', 'data-turbolinks-track' => true %>
+
     <!--Carousel-->
     <%= stylesheet_link_tag 'carousel/component', media: 'all', 'data-turbolinks-track' => true %>
     <!--Gallery-->
@@ -24,7 +31,9 @@
     <%= stylesheet_link_tag 'layout2', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'responsive', media: 'all', 'data-turbolinks-track' => true %>
 
-	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <style type="text/css">.weatherForecast{display:none;} .weatherFeed{margin:5px 10px;}</style>
+
+  	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
