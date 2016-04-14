@@ -1,13 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
-# Engines
-gemspec path: 'realm/bloggy'
-# gemspec path: 'palace'
-
 gem 'rails', '4.2.5'
 gem 'activerecord-session_store'
 
+gem 'bcrypt'
 gem 'turbolinks'
 gem 'jquery-rails'
 gem 'jbuilder'
@@ -15,10 +12,34 @@ gem 'compass-rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
+gem 'truncate_html'
+gem 'select2-rails'
+gem 'responders'
+
+gem 'rails-i18n'
+
+# Auth/users
+gem 'devise'
+
+gem 'koala', '~> 2.2'
+gem 'omniauth-facebook'
+gem 'kaminari'
+
+gem 'sidekiq'
+
+gem 'paperclip', git: 'git://github.com/thoughtbot/paperclip.git'
+
+gem 'ckeditor'
 
 group :development, :test do
   gem 'pry'
-  # gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'shoulda'
+  gem 'guard-rspec'
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -35,7 +56,7 @@ group :development do
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-bundler', '~> 1.1.2'
   gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+  gem 'capistrano-rbenv', github: 'capistrano/rbenv'
   gem 'capistrano-rails-console'
 end
 
@@ -49,14 +70,3 @@ group :production do
   gem 'rails_12factor'
   gem 'aws-sdk'
 end
-
-# Auth/users
-gem 'devise'
-
-gem 'koala', '~> 2.2'
-gem 'omniauth-facebook'
-gem 'kaminari'
-
-gem 'sidekiq'
-
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
