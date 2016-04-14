@@ -14,5 +14,4 @@
 //= require ckeditor/init
 //= require bloggy/admin/ckeditor-config
 //= require bloggy/admin/posts
-//= require summernote
 //= require select2
