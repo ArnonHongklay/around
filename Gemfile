@@ -10,11 +10,11 @@ gem 'activerecord-session_store'
 
 gem 'turbolinks'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'compass-rails', '3.0.2'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'jbuilder'
+gem 'compass-rails'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 
 group :development, :test do
   gem 'pry'
@@ -31,6 +31,12 @@ group :development do
   # gem 'guard-livereload', require: false
   # gem 'rack-livereload'
   # gem 'rb-fsevent', require: false
+
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+  gem 'capistrano-rails-console'
 end
 
 platform :ruby do
@@ -54,9 +60,3 @@ gem 'kaminari'
 gem 'sidekiq'
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-
-gem 'capistrano', '~> 3.1'
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1'
-gem 'capistrano-rbenv', github: "capistrano/rbenv"
-gem 'capistrano-rails-console'
