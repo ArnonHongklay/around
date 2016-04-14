@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Bloggy::User.create do |u|
+Blog::User.create do |u|
   u.name                  = "Hi"
   u.email                 = "hi@mepop.co"
   u.password              = "123456789"
