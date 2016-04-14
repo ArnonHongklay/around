@@ -12,17 +12,17 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'/>
 
-    <%= stylesheet_link_tag 'css/bootstrap', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/font-awesome-4.4.0/css/font-awesome.min', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/jquery-ui-1.10.4.custom.min', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/settings', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/travel-mega-menu', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'font-awesome-4.4.0/css/font-awesome', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'jquery-ui-1.10.4.custom.min', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'settings', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'travel-mega-menu', media: 'all', 'data-turbolinks-track' => true %>
     <!--Carousel-->
-    <%= stylesheet_link_tag 'css/carousel/component', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'carousel/component', media: 'all', 'data-turbolinks-track' => true %>
     <!--Gallery-->
-    <%= stylesheet_link_tag 'css/gallery/component', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/layout2', media: 'all', 'data-turbolinks-track' => true %>
-    <%= stylesheet_link_tag 'css/responsive', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'gallery/component', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'layout2', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'responsive', media: 'all', 'data-turbolinks-track' => true %>
 
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
@@ -34,11 +34,11 @@
 <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 
-<%= javascript_include_tag 'js/modernizr', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/jquery-1.10.1.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/jquery-migrate-1.2.1.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/jquery-ui-1.10.4.custom.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/jquery.easing.1.3', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'modernizr', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery-1.10.1.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery-migrate-1.2.1.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery-ui-1.10.4.custom.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery.easing.1.3', "data-turbolinks-track" => true %>
 <!--Preload-->
 <script type="text/javascript">
     $(document).ready(function ($) {
@@ -51,8 +51,8 @@
     });
 </script>
 
-<%= javascript_include_tag 'js/jquery.themepunch.plugins.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/jquery.themepunch.revolution.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery.themepunch.plugins.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'jquery.themepunch.revolution.min', "data-turbolinks-track" => true %>
 <script type="text/javascript">
     var tpj = jQuery;
     tpj(document).ready(function () {
@@ -82,11 +82,11 @@
 </script>
 
 
-<%= javascript_include_tag 'js/bootstrap.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/bootstrap-hover-dropdown.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'bootstrap.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'bootstrap-hover-dropdown.min', "data-turbolinks-track" => true %>
 <!--Carousel-->
-<%= javascript_include_tag 'js/carousel/modernizr.custom', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/carousel/jquery.cbpContentSlider.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'carousel/modernizr.custom', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'carousel/jquery.cbpContentSlider.min', "data-turbolinks-track" => true %>
 <script type="text/javascript">
 $(function () {
     "use strict";
@@ -94,17 +94,17 @@ $(function () {
 });
 </script>
 <!-- Gallery -->
-<%= javascript_include_tag 'js/gallery/imagesloaded.pkgd.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/gallery/masonry.pkgd.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/gallery/classie', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/gallery/cbpGridGallery', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'gallery/imagesloaded.pkgd.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'gallery/masonry.pkgd.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'gallery/classie', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'gallery/cbpGridGallery', "data-turbolinks-track" => true %>
 <script type="text/javascript">
 $(function () {
     "use strict";
     new CBPGridGallery(document.getElementById('grid-gallery'));
 });
 </script>
-<%= javascript_include_tag 'js/waypoints.min', "data-turbolinks-track" => true %>
-<%= javascript_include_tag 'js/script', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'waypoints.min', "data-turbolinks-track" => true %>
+<%= javascript_include_tag 'script', "data-turbolinks-track" => true %>
   </body>
 </html>
