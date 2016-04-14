@@ -7,6 +7,53 @@ GIT
       sshkit (~> 1.3)
 
 GIT
+  remote: git://github.com/rspec/rspec-core.git
+  revision: b0c3d536150e16ebf759e00b89fae1fe03f885ef
+  branch: master
+  specs:
+    rspec-core (3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-expectations.git
+  revision: d5b6b35d518ab6692f894d2f124608878c1da946
+  branch: master
+  specs:
+    rspec-expectations (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-mocks.git
+  revision: b1e2b3763e6495ef1ffecdb4ea1af7c526ac5c9f
+  branch: master
+  specs:
+    rspec-mocks (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-rails.git
+  revision: aeb32e10eee286730cbd490419aed573ac7af038
+  branch: master
+  specs:
+    rspec-rails (3.5.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.5.0.pre)
+      rspec-expectations (= 3.5.0.pre)
+      rspec-mocks (= 3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-support.git
+  revision: d8666d5fc14ac08f23b7b9796b42e65bca66bb55
+  branch: master
+  specs:
+    rspec-support (3.5.0.pre)
+
+GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: f7aa32069cc798dc96ca07c8dceee2ced7a1b571
   specs:
@@ -71,7 +118,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    capistrano (3.4.0)
+    capistrano (3.4.1)
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
@@ -83,18 +130,16 @@ GEM
       capistrano-bundler (~> 1.1)
     capistrano-rails-console (1.0.2)
       capistrano (>= 3.1.0, < 4.0.0)
-    capybara (1.1.4)
+    capybara (2.7.0)
+      addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      selenium-webdriver (~> 2.0)
-      xpath (~> 0.1.4)
-    capybara-webkit (0.13.2)
-      capybara (>= 1.0.0, < 1.2)
+      xpath (~> 2.0)
+    capybara-webkit (1.10.1)
+      capybara (>= 2.3.0, < 2.8.0)
       json
-    childprocess (0.5.9)
-      ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.3.5)
     ckeditor (4.1.6)
       cocaine
@@ -129,7 +174,7 @@ GEM
       sprockets (< 4.0)
     concurrent-ruby (1.0.1)
     connection_pool (2.2.0)
-    database_cleaner (1.4.1)
+    database_cleaner (1.5.1)
     debug_inspector (0.0.2)
     devise (3.5.6)
       bcrypt (~> 3.0)
@@ -141,10 +186,10 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
-    factory_girl (4.5.0)
+    factory_girl (4.7.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.5.0)
-      factory_girl (~> 4.5.0)
+    factory_girl_rails (4.7.0)
+      factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
@@ -161,11 +206,8 @@ GEM
       pry (>= 0.9.12)
       shellany (~> 0.0)
       thor (>= 0.18.1)
-    guard-compat (1.2.1)
-    guard-rspec (4.6.5)
-      guard (~> 2.1)
-      guard-compat (~> 1.1)
-      rspec (>= 2.99.0, < 4.0)
+    guard-rspec (1.2.2)
+      guard (>= 1.1)
     hashie (3.4.3)
     i18n (0.7.0)
     jbuilder (2.4.1)
@@ -278,26 +320,6 @@ GEM
     redis (3.2.2)
     responders (2.1.2)
       railties (>= 4.2.0, < 5.1)
-    rspec (2.99.0)
-      rspec-core (~> 2.99.0)
-      rspec-expectations (~> 2.99.0)
-      rspec-mocks (~> 2.99.0)
-    rspec-collection_matchers (1.1.2)
-      rspec-expectations (>= 2.99.0.beta1)
-    rspec-core (2.99.2)
-    rspec-expectations (2.99.2)
-      diff-lcs (>= 1.1.3, < 2.0)
-    rspec-mocks (2.99.4)
-    rspec-rails (2.99.0)
-      actionpack (>= 3.0)
-      activemodel (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-collection_matchers
-      rspec-core (~> 2.99.0)
-      rspec-expectations (~> 2.99.0)
-      rspec-mocks (~> 2.99.0)
-    rubyzip (1.2.0)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -305,12 +327,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    select2-rails (3.5.10)
+    select2-rails (4.0.1.1)
       thor (~> 0.14)
-    selenium-webdriver (2.53.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.0)
-      websocket (~> 1.0)
     shellany (0.0.1)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
@@ -354,8 +372,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    websocket (1.2.3)
-    xpath (0.1.4)
+    xpath (2.0.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
@@ -391,7 +408,11 @@ DEPENDENCIES
   rails-i18n
   rails_12factor
   responders
-  rspec-rails
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
   sass-rails
   select2-rails
   shoulda
