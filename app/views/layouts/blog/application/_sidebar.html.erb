@@ -1,0 +1,7 @@
+<% if Rails.application.config.sidebar %>
+<aside class="sidebar four columns">
+   <% Rails.application.config.sidebar.each do |ext| %>
+     <%= render partial: "blog/sidebar/#{ext}" %>
+   <% end %>
+</aside>
+<% end %>
