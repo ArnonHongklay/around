@@ -41,7 +41,8 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'shoulda'
-  gem 'guard-rspec'
+  # gem 'guard'
+  # gem 'guard-rspec'
   gem 'database_cleaner'
 end
 
