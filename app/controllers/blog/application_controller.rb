@@ -10,7 +10,7 @@ class Blog::ApplicationController < ApplicationController
   end
 
   def all_tags
-    @tags = Blog::Tag.order("name").select{|t| t.frequency>0}
+    @tags = Blog::Tag.order("name").select{ |t| t.frequency > 0 }
     #could use minmax here but it's only supported with ruby > 1.9'
     @tags_frequency_min = @tags.map{|t| t.frequency}.min
     @tags_frequency_max = @tags.map{|t| t.frequency}.max
